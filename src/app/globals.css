@@ -1,26 +1,336 @@
 @import "tailwindcss";
 
+@theme {
+  --font-cardo: var(--font-cardo), "Cardo", Georgia, serif;
+  --font-urbanist: var(--font-urbanist), "Urbanist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-wood-50: #f8f6ef;
+  --color-wood-100: #f2efe2;
+  --color-wood-200: #e4dcc4;
+  --color-wood-300: #cdbba2;
+  --color-wood-600: #8a6c50;
+  --color-wood-700: #8b6843;
+  --color-wood-800: #71553b;
+  --color-wood-870: #71553bb3;
+  --color-dark-900: #3d3d3d;
+  --color-gray-500: #6d6d6d;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --wood-50: #f8f6ef;
+  --wood-100: #f2efe2;
+  --wood-200: #e4dcc4;
+  --wood-700: #8b6843;
+  --wood-800: #71553b;
+  --wood-870: #71553bb3;
+  --gray-900: #3d3d3d;
+  --gray-500: #6d6d6d;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    font-family: var(--font-urbanist);
+    color: #3d3d3d;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Exact Webflow Cardo Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-cardo);
+    color: #3d3d3d;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 96px;
+    letter-spacing: -4.8px;
+  }
+
+  h2 {
+    font-size: 64px;
+    letter-spacing: -3.2px;
+  }
+
+  h3 {
+    font-size: 48px;
+    letter-spacing: -2.4px;
+  }
+
+  h4 {
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+
+  h5 {
+    font-size: 36px;
+    letter-spacing: -1.8px;
+  }
+
+  h6, .h6-heading {
+    font-family: var(--font-cardo);
+    font-size: 32px;
+    letter-spacing: -1.6px;
+    line-height: 100%;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  /* Responsive Headings matching Webflow Media Queries */
+  @media screen and (max-width: 991px) {
+    h1 {
+      font-size: 70px;
+      letter-spacing: -3.5px;
+    }
+    h2 {
+      font-size: 54px;
+      letter-spacing: -2.7px;
+    }
+    h3 {
+      font-size: 42px;
+      letter-spacing: -2px;
+    }
+    h4 {
+      font-size: 36px;
+    }
+    h5 {
+      font-size: 32px;
+    }
+    h6, .h6-heading {
+      font-size: 28px;
+      letter-spacing: -1.2px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-size: 54px;
+      letter-spacing: -2.7px;
+    }
+    h2 {
+      font-size: 48px;
+      letter-spacing: -2.4px;
+    }
+    h3 {
+      font-size: 38px;
+    }
+    h4 {
+      font-size: 32px;
+    }
+    h5 {
+      font-size: 28px;
+    }
+    h6, .h6-heading {
+      font-size: 26px;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    h1 {
+      font-size: 38px;
+      letter-spacing: -1.9px;
+    }
+    h2 {
+      font-size: 38px;
+      letter-spacing: -1.9px;
+    }
+    h3 {
+      font-size: 34px;
+    }
+    h4 {
+      font-size: 30px;
+    }
+    h5 {
+      font-size: 26px;
+    }
+    h6, .h6-heading {
+      font-size: 24px;
+    }
+  }
+
+  em, i {
+    font-style: italic;
+    font-family: inherit;
+  }
+
+  /* Sharp geometric borders for luxury minimalism */
+  img, div, button, input, select, textarea, form, a, section, header, footer {
+    border-radius: 0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Color utility classes matching Webflow */
+.wood-700-text {
+  color: #8b6843 !important;
+}
+
+.wood-800-text {
+  color: #71553b !important;
+}
+
+.wood-870-text {
+  color: #71553bb3 !important;
+}
+
+.white-text {
+  color: #ffffff !important;
+}
+
+.bg-wood-50 {
+  background-color: #f8f6ef !important;
+}
+
+.bg-wood-100 {
+  background-color: #f2efe2 !important;
+}
+
+.bg-wood-200 {
+  background-color: #e4dcc4 !important;
+}
+
+/* Paragraph styles matching Webflow */
+.large-paragraph {
+  font-family: var(--font-urbanist);
+  color: #6d6d6d;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .large-paragraph {
+    font-size: 16px;
+  }
+}
+
+.paragraph {
+  font-family: var(--font-urbanist);
+  color: #6d6d6d;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.small-paragraph {
+  font-family: var(--font-urbanist);
+  color: #6d6d6d;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  margin: 0;
+}
+
+.small-paragraph.hero-review-text {
+  color: #ffffff;
+}
+
+/* Authentic Webflow Button with sliding roll interaction */
+.webflow-button {
+  position: relative;
+  display: inline-block;
+  height: 52px;
+  padding: 0 32px;
+  background-color: #3d3d3d;
+  color: #ffffff;
+  font-family: var(--font-urbanist);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #3d3d3d;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.webflow-button .btn-text-wrapper {
+  position: relative;
+  display: block;
+  height: 52px;
+  overflow: hidden;
+}
+
+.webflow-button .btn-text {
+  display: block;
+  height: 52px;
+  line-height: 52px;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  white-space: nowrap;
+}
+
+.webflow-button:hover .btn-text-1 {
+  transform: translateY(-100%);
+}
+
+.webflow-button:hover .btn-text-2 {
+  transform: translateY(-100%);
+}
+
+.webflow-button.btn-white {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.webflow-button.btn-white:hover {
+  background-color: #ffffff;
+  color: #3d3d3d;
+}
+
+.webflow-button:not(.btn-white):hover {
+  background-color: #8b6843;
+  border-color: #8b6843;
+  color: #ffffff;
+}
+
+/* Image Zoom on hover */
+.img-zoom-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-zoom-container img {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-zoom-container:hover img {
+  transform: scale(1.06);
+}
+
+/* Text Underline Link */
+.text-underline-link {
+  font-family: var(--font-urbanist);
+  font-size: 16px;
+  font-weight: 600;
+  color: #3d3d3d;
+  text-decoration: none;
+  border-bottom: 1.5px solid #3d3d3d;
+  padding-bottom: 2px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  display: inline-block;
+}
+
+.text-underline-link:hover {
+  color: #8b6843;
+  border-color: #8b6843;
 }
