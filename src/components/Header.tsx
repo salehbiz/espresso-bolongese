@@ -135,8 +135,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
               <nav className="flex flex-col space-y-4">
                 {[
                   { name: "About us", href: "/about-us" },
-                  { name: "Villas & Suites", href: "/#rooms" },
-                  { name: "Dining", href: "/#dining" },
+                  { name: "Dining", href: "/dining" },
                   { name: "Wellness", href: "/#wellness" },
                   { name: "Packages", href: "/#packages" },
                   { name: "News & Blogs", href: "/#blog" },

@@ -147,9 +147,8 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm">
               {[
                 { name: "About Us", href: "/about-us" },
-                { name: "Villas & Suites", href: "/#rooms" },
+                { name: "Dining", href: "/dining" },
                 { name: "Packages", href: "/#packages" },
-                { name: "Dining", href: "/#dining" },
                 { name: "Wellness", href: "/#wellness" },
               ].map((link) => (
                 <li key={link.name}>
