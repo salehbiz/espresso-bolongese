@@ -6,11 +6,14 @@ import { AirbaseIcon, CloseIcon } from "./Icons";
 
 interface HeaderProps {
   onOpenModal: () => void;
+  theme?: "light" | "dark";
 }
 
-export default function Header({ onOpenModal }: HeaderProps) {
+export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const isDarkHeader = theme === "dark" || isScrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +51,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
             <Link href="/" className="relative z-10 flex items-center">
               <img
                 src={
-                  isScrolled
+                  isDarkHeader
                     ? "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901f22a1108ac6f33917525_logo-dark.svg"
                     : "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/68ff686aec269ed2084b2db0_logo-light.svg"
                 }
@@ -63,7 +66,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
               <button
                 onClick={onOpenModal}
                 className={`webflow-button ${
-                  isScrolled ? "" : "btn-white"
+                  isDarkHeader ? "" : "btn-white"
                 }`}
               >
                 <div className="btn-text-wrapper">
@@ -76,7 +79,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
               <button
                 onClick={() => setMenuOpen(true)}
                 className={`flex items-center gap-2 px-3 py-2 text-xs font-bold uppercase tracking-[0.15em] transition-colors cursor-pointer ${
-                  isScrolled
+                  isDarkHeader
                     ? "text-[#3D3D3D] hover:text-[#8B6843]"
                     : "text-white hover:text-white/80"
                 }`}
@@ -137,9 +140,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
                   { name: "About us", href: "/about-us" },
                   { name: "Dining", href: "/dining" },
                   { name: "Wellness", href: "/wellness" },
-                  { name: "Packages", href: "/#packages" },
-                  { name: "News & Blogs", href: "/#blog" },
-                  { name: "Contact Us", href: "/#contact" },
+                  { name: "Contact Us", href: "/contact-us" },
                 ].map((item) => (
                   <Link
                     key={item.name}

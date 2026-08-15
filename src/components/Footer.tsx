@@ -148,8 +148,8 @@ export default function Footer() {
               {[
                 { name: "About Us", href: "/about-us" },
                 { name: "Dining", href: "/dining" },
-                { name: "Packages", href: "/#packages" },
                 { name: "Wellness", href: "/wellness" },
+                { name: "Contact Us", href: "/contact-us" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -158,28 +158,6 @@ export default function Footer() {
                   >
                     {link.name}
                   </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* More */}
-          <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-urbanist text-xs font-bold uppercase tracking-widest text-[#71553b]">
-              More
-            </h4>
-            <ul className="space-y-2.5 text-sm">
-              {[
-                { name: "Contact", href: "#contact" },
-                { name: "News & Blogs", href: "#blog" },
-              ].map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="large-paragraph footer-text-link text-[#71553b] hover:text-[#3D3D3D] transition-colors"
-                  >
-                    {link.name}
-                  </a>
                 </li>
               ))}
             </ul>
