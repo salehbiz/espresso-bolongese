@@ -136,7 +136,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
                 {[
                   { name: "About us", href: "/about-us" },
                   { name: "Dining", href: "/dining" },
-                  { name: "Wellness", href: "/#wellness" },
+                  { name: "Wellness", href: "/wellness" },
                   { name: "Packages", href: "/#packages" },
                   { name: "News & Blogs", href: "/#blog" },
                   { name: "Contact Us", href: "/#contact" },
