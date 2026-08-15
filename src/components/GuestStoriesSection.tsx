@@ -2,7 +2,13 @@
 
 import React, { useState } from "react";
 
-export default function GuestStoriesSection() {
+interface GuestStoriesSectionProps {
+  variant?: "white" | "wood-50";
+}
+
+export default function GuestStoriesSection({
+  variant = "white",
+}: GuestStoriesSectionProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const stories = [
@@ -65,8 +71,10 @@ export default function GuestStoriesSection() {
     setCurrentSlide((prev) => (prev + 1) % stories.length);
   };
 
+  const bgClass = variant === "wood-50" ? "bg-[#f8f6ef]" : "bg-white";
+
   return (
-    <section className="section py-28 sm:py-36 bg-white">
+    <section className={`section py-28 sm:py-36 ${bgClass}`}>
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">

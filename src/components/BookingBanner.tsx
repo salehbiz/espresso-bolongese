@@ -4,15 +4,19 @@ import React from "react";
 
 interface BookingBannerProps {
   onOpenModal: () => void;
+  backgroundImage?: string;
 }
 
-export default function BookingBanner({ onOpenModal }: BookingBannerProps) {
+export default function BookingBanner({
+  onOpenModal,
+  backgroundImage = "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901e68b93f128fb517b66ee_cta-background.webp",
+}: BookingBannerProps) {
   return (
     <section className="relative py-28 sm:py-36 overflow-hidden flex items-center justify-center bg-black">
       {/* Full-Bleed Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901e68b93f128fb517b66ee_cta-background.webp"
+          src={backgroundImage}
           alt="Luxury pool night view"
           className="w-full h-full object-cover"
         />
