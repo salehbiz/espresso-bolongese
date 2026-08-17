@@ -13,13 +13,13 @@ export default function WellnessPhilosophySection() {
   ];
 
   return (
-    <section className="section py-24 sm:py-32 bg-[#FAF7F2] overflow-hidden">
+    <section className="section py-24 sm:py-32 bg-[#8C7355] text-white overflow-hidden">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8 mb-16">
         <div className="text-center max-w-[620px] mx-auto">
-          <h2 className="text-[#3E3226] mb-4">
-            Our Wellness <em className="wood-700-text font-cardo italic">Philosophy</em>
+          <h2 className="text-white mb-4">
+            Our Wellness <em className="text-[#FAF7F2] font-normal italic">Philosophy</em>
           </h2>
-          <p className="large-paragraph text-[#7A6F64] leading-relaxed">
+          <p className="large-paragraph text-[#FAF7F2]/90 leading-relaxed">
             We believe true wellbeing comes from harmony — of body, mind, and nature. Every treatment, ritual, and practice is crafted to reconnect you with yourself and the beauty around you.
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function WellnessPhilosophySection() {
           {images.map((src, idx) => (
             <div
               key={idx}
-              className="img-zoom-container relative h-[260px] sm:h-[320px] w-[200px] sm:w-[260px] overflow-hidden shadow-xs bg-[#E5DCCE] shrink-0"
+              className="img-zoom-container relative h-[260px] sm:h-[320px] w-[200px] sm:w-[260px] overflow-hidden shadow-xs bg-[#FAF7F2]/20 shrink-0"
             >
               <img
                 src={src}
