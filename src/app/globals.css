@@ -1,30 +1,33 @@
 @import "tailwindcss";
 
-@theme {
-  --font-cardo: var(--font-cardo), "Cardo", Georgia, serif;
-  --font-urbanist: var(--font-urbanist), "Urbanist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+:root {
+  /* Brand Colors */
+  --brand-brown: #8C7355;
+  --brand-cream: #FAF7F2;
+  --brand-white: #FFFFFF;
+  --brand-dark: #3E3226;
+  --accent-green: #2E7D46;
+  --accent-red: #C93A35;
 
-  --color-wood-50: #f8f6ef;
-  --color-wood-100: #f2efe2;
-  --color-wood-200: #e4dcc4;
-  --color-wood-300: #cdbba2;
-  --color-wood-600: #8a6c50;
-  --color-wood-700: #8b6843;
-  --color-wood-800: #71553b;
-  --color-wood-870: #71553bb3;
-  --color-dark-900: #3d3d3d;
-  --color-gray-500: #6d6d6d;
+  /* Typography */
+  --font-heading: var(--font-heading), "Barlow Semi Condensed", -apple-system, sans-serif;
+  --font-body: var(--font-body), "Barlow", -apple-system, sans-serif;
 }
 
-:root {
-  --wood-50: #f8f6ef;
-  --wood-100: #f2efe2;
-  --wood-200: #e4dcc4;
-  --wood-700: #8b6843;
-  --wood-800: #71553b;
-  --wood-870: #71553bb3;
-  --gray-900: #3d3d3d;
-  --gray-500: #6d6d6d;
+@theme {
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+
+  --color-brand-brown: var(--brand-brown);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-white: var(--brand-white);
+  --color-brand-dark: var(--brand-dark);
+  --color-accent-green: var(--accent-green);
+  --color-accent-red: var(--accent-red);
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
 }
 
 @layer base {
@@ -33,304 +36,163 @@
   }
 
   body {
-    font-family: var(--font-urbanist);
-    color: #3d3d3d;
-    background-color: #ffffff;
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--brand-dark);
+    background-color: var(--brand-cream);
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Exact Webflow Cardo Headings */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-cardo);
-    color: #3d3d3d;
-    font-weight: 400;
-    line-height: 100%;
+  /* Headings: Barlow Semi Condensed, weights 600/700, letter spacing -0.01em */
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    color: inherit;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   h1 {
-    font-size: 96px;
-    letter-spacing: -4.8px;
+    font-weight: 700;
+    font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+    line-height: 1.05;
   }
 
   h2 {
-    font-size: 64px;
-    letter-spacing: -3.2px;
+    font-weight: 700;
+    font-size: clamp(2rem, 3.5vw + 1rem, 3.25rem);
+    line-height: 1.15;
   }
 
   h3 {
-    font-size: 48px;
-    letter-spacing: -2.4px;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.25rem);
+    line-height: 1.25;
   }
 
   h4 {
-    font-size: 40px;
-    letter-spacing: -2px;
+    font-weight: 600;
+    font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.75rem);
+    line-height: 1.3;
   }
 
   h5 {
-    font-size: 36px;
-    letter-spacing: -1.8px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.4;
   }
 
-  h6, .h6-heading {
-    font-family: var(--font-cardo);
-    font-size: 32px;
-    letter-spacing: -1.6px;
-    line-height: 100%;
-    font-weight: 400;
-    margin: 0;
+  h6 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.4;
   }
 
-  /* Responsive Headings matching Webflow Media Queries */
-  @media screen and (max-width: 991px) {
-    h1 {
-      font-size: 70px;
-      letter-spacing: -3.5px;
-    }
-    h2 {
-      font-size: 54px;
-      letter-spacing: -2.7px;
-    }
-    h3 {
-      font-size: 42px;
-      letter-spacing: -2px;
-    }
-    h4 {
-      font-size: 36px;
-    }
-    h5 {
-      font-size: 32px;
-    }
-    h6, .h6-heading {
-      font-size: 28px;
-      letter-spacing: -1.2px;
-    }
+  p {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  @media screen and (max-width: 767px) {
-    h1 {
-      font-size: 54px;
-      letter-spacing: -2.7px;
-    }
-    h2 {
-      font-size: 48px;
-      letter-spacing: -2.4px;
-    }
-    h3 {
-      font-size: 38px;
-    }
-    h4 {
-      font-size: 32px;
-    }
-    h5 {
-      font-size: 28px;
-    }
-    h6, .h6-heading {
-      font-size: 26px;
-    }
-  }
-
-  @media screen and (max-width: 479px) {
-    h1 {
-      font-size: 38px;
-      letter-spacing: -1.9px;
-    }
-    h2 {
-      font-size: 38px;
-      letter-spacing: -1.9px;
-    }
-    h3 {
-      font-size: 34px;
-    }
-    h4 {
-      font-size: 30px;
-    }
-    h5 {
-      font-size: 26px;
-    }
-    h6, .h6-heading {
-      font-size: 24px;
-    }
-  }
-
-  em, i {
-    font-style: italic;
-    font-family: inherit;
-  }
-
-  /* Sharp geometric borders for luxury minimalism */
-  img, div, button, input, select, textarea, form, a, section, header, footer {
-    border-radius: 0;
+  /* Max border radius constraint */
+  * {
+    border-radius: min(8px, inherit);
   }
 }
 
-/* Color utility classes matching Webflow */
-.wood-700-text {
-  color: #8b6843 !important;
-}
-
-.wood-800-text {
-  color: #71553b !important;
-}
-
-.wood-870-text {
-  color: #71553bb3 !important;
-}
-
-.white-text {
-  color: #ffffff !important;
-}
-
-.bg-wood-50 {
-  background-color: #f8f6ef !important;
-}
-
-.bg-wood-100 {
-  background-color: #f2efe2 !important;
-}
-
-.bg-wood-200 {
-  background-color: #e4dcc4 !important;
-}
-
-/* Paragraph styles matching Webflow */
-.large-paragraph {
-  font-family: var(--font-urbanist);
-  color: #6d6d6d;
-  font-size: 18px;
-  line-height: 140%;
-  font-weight: 500;
-  letter-spacing: 0;
-  margin: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .large-paragraph {
-    font-size: 16px;
-  }
-}
-
-.paragraph {
-  font-family: var(--font-urbanist);
-  color: #6d6d6d;
-  font-size: 16px;
-  line-height: 140%;
-  font-weight: 500;
-  letter-spacing: 0;
-  margin: 0;
-}
-
-.small-paragraph {
-  font-family: var(--font-urbanist);
-  color: #6d6d6d;
-  font-size: 14px;
-  line-height: 120%;
+/* Primary Brand CTA (Red reserved for primary CTA only) */
+.brand-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-red);
+  color: var(--brand-white);
+  font-family: var(--font-heading);
   font-weight: 600;
-  letter-spacing: 0.6px;
-  margin: 0;
-}
-
-.small-paragraph.hero-review-text {
-  color: #ffffff;
-}
-
-/* Authentic Webflow Button with sliding roll interaction */
-.webflow-button {
-  position: relative;
-  display: inline-block;
-  height: 52px;
-  padding: 0 32px;
-  background-color: #3d3d3d;
-  color: #ffffff;
-  font-family: var(--font-urbanist);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 52px;
-  letter-spacing: 0.5px;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  padding: 0.85rem 1.75rem;
+  border-radius: 6px;
   text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  border: none;
   cursor: pointer;
-  overflow: hidden;
-  border: 1px solid #3d3d3d;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-  user-select: none;
 }
 
-.webflow-button .btn-text-wrapper {
-  position: relative;
-  display: block;
-  height: 52px;
-  overflow: hidden;
+.brand-cta-primary:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
 }
 
-.webflow-button .btn-text {
-  display: block;
-  height: 52px;
-  line-height: 52px;
-  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-  white-space: nowrap;
-}
-
-.webflow-button:hover .btn-text-1 {
-  transform: translateY(-100%);
-}
-
-.webflow-button:hover .btn-text-2 {
-  transform: translateY(-100%);
-}
-
-.webflow-button.btn-white {
+/* Secondary CTA / Outline Button */
+.brand-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: var(--brand-brown);
+  border: 1px solid var(--brand-brown);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  padding: 0.85rem 1.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.webflow-button.btn-white:hover {
-  background-color: #ffffff;
-  color: #3d3d3d;
+.brand-cta-secondary:hover {
+  background-color: var(--brand-brown);
+  color: var(--brand-white);
 }
 
-.webflow-button:not(.btn-white):hover {
-  background-color: #8b6843;
-  border-color: #8b6843;
-  color: #ffffff;
-}
-
-/* Image Zoom on hover */
-.img-zoom-container {
-  overflow: hidden;
+/* Accent corner brackets mirroring the logo style */
+.brand-corner-frame {
   position: relative;
 }
 
-.img-zoom-container img {
-  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+.brand-corner-frame::before,
+.brand-corner-frame::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+}
+
+.brand-corner-frame-green::before {
+  top: 0;
+  left: 0;
+  border-top: 2px solid var(--accent-green);
+  border-left: 2px solid var(--accent-green);
+}
+
+.brand-corner-frame-green::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid var(--accent-green);
+  border-right: 2px solid var(--accent-green);
+}
+
+/* Thin divider lines */
+.brand-divider-green {
+  height: 1px;
+  background-color: var(--accent-green);
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  opacity: 0.4;
 }
 
-.img-zoom-container:hover img {
-  transform: scale(1.06);
-}
-
-/* Text Underline Link */
-.text-underline-link {
-  font-family: var(--font-urbanist);
-  font-size: 16px;
-  font-weight: 600;
-  color: #3d3d3d;
-  text-decoration: none;
-  border-bottom: 1.5px solid #3d3d3d;
-  padding-bottom: 2px;
-  transition: color 0.3s ease, border-color 0.3s ease;
-  display: inline-block;
-}
-
-.text-underline-link:hover {
-  color: #8b6843;
-  border-color: #8b6843;
+.brand-divider-brown {
+  height: 1px;
+  background-color: var(--brand-brown);
+  width: 100%;
+  opacity: 0.3;
 }
