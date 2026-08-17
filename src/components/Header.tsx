@@ -41,31 +41,78 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? "bg-white shadow-[0_4px_20px_rgba(0,0,0,0.06)] py-4"
-            : "bg-transparent py-6"
+            ? "bg-white shadow-[0_4px_20px_rgba(0,0,0,0.06)] py-3"
+            : "bg-transparent py-5"
         }`}
       >
         <div className="max-w-[1440px] mx-auto px-5 sm:px-8">
           <div className="flex items-center justify-between">
-            {/* Brand Logo */}
-            <Link href="/" className="relative z-10 flex items-center">
-              <img
-                src={
+            {/* Left Menu Items (Desktop) */}
+            <nav className="hidden lg:flex items-center gap-8 flex-1 justify-start">
+              <Link
+                href="/about-us"
+                className={`font-heading text-sm font-semibold uppercase tracking-wider transition-colors ${
                   isDarkHeader
-                    ? "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901f22a1108ac6f33917525_logo-dark.svg"
-                    : "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/68ff686aec269ed2084b2db0_logo-light.svg"
-                }
-                alt="Asatha Resort Logo"
-                className="h-7 sm:h-8 w-auto transition-opacity duration-300"
+                    ? "text-[#3E3226] hover:text-[#8C7355]"
+                    : "text-white hover:text-white/80"
+                }`}
+              >
+                About us
+              </Link>
+              <Link
+                href="/dining"
+                className={`font-heading text-sm font-semibold uppercase tracking-wider transition-colors ${
+                  isDarkHeader
+                    ? "text-[#3E3226] hover:text-[#8C7355]"
+                    : "text-white hover:text-white/80"
+                }`}
+              >
+                Dining
+              </Link>
+            </nav>
+
+            {/* Centered Brand Logo */}
+            <Link
+              href="/"
+              className="relative z-10 flex items-center justify-center shrink-0 px-4"
+              aria-label="Espresso Bolognese Home"
+            >
+              <img
+                src="/images/logo.svg"
+                alt="Espresso Bolognese Logo"
+                className="h-10 sm:h-12 w-auto transition-transform duration-300 hover:scale-105"
               />
             </Link>
 
-            {/* Right Action Buttons */}
-            <div className="flex items-center gap-4 sm:gap-6">
+            {/* Right Menu Items & Actions */}
+            <div className="flex items-center gap-5 sm:gap-6 flex-1 justify-end">
+              <nav className="hidden lg:flex items-center gap-8">
+                <Link
+                  href="/wellness"
+                  className={`font-heading text-sm font-semibold uppercase tracking-wider transition-colors ${
+                    isDarkHeader
+                      ? "text-[#3E3226] hover:text-[#8C7355]"
+                      : "text-white hover:text-white/80"
+                  }`}
+                >
+                  Wellness
+                </Link>
+                <Link
+                  href="/contact-us"
+                  className={`font-heading text-sm font-semibold uppercase tracking-wider transition-colors ${
+                    isDarkHeader
+                      ? "text-[#3E3226] hover:text-[#8C7355]"
+                      : "text-white hover:text-white/80"
+                  }`}
+                >
+                  Contact Us
+                </Link>
+              </nav>
+
               {/* Check Availability Sharp Double-Text Button */}
               <button
                 onClick={onOpenModal}
-                className={`webflow-button ${
+                className={`webflow-button shrink-0 ${
                   isDarkHeader ? "" : "btn-white"
                 }`}
               >
@@ -78,7 +125,7 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
               {/* Menu Toggle Button */}
               <button
                 onClick={() => setMenuOpen(true)}
-                className={`flex items-center gap-2 px-3 py-2 text-xs font-bold uppercase tracking-[0.15em] transition-colors cursor-pointer ${
+                className={`flex items-center gap-2 px-2 py-2 text-xs font-bold uppercase tracking-[0.15em] transition-colors cursor-pointer ${
                   isDarkHeader
                     ? "text-[#3E3226] hover:text-[#8C7355]"
                     : "text-white hover:text-white/80"
@@ -121,13 +168,13 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
               {/* Header inside drawer */}
               <div className="flex items-center justify-between pb-8 mb-8 border-b border-[#E5DCCE]">
                 <img
-                  src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901f22a1108ac6f33917525_logo-dark.svg"
-                  alt="Logo"
-                  className="h-7 w-auto"
+                  src="/images/logo.svg"
+                  alt="Espresso Bolognese Logo"
+                  className="h-10 w-auto"
                 />
                 <button
                   onClick={() => setMenuOpen(false)}
-                  className="p-2 text-[#3E3226] hover:text-[#8C7355] transition-colors"
+                  className="p-2 text-[#3E3226] hover:text-[#8C7355] transition-colors cursor-pointer"
                   aria-label="Close menu"
                 >
                   <CloseIcon />
@@ -146,7 +193,7 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
                     key={item.name}
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
-                    className="font-cardo text-2xl text-[#3E3226] hover:text-[#8C7355] transition-colors py-1 block"
+                    className="font-heading text-2xl font-semibold text-[#3E3226] hover:text-[#8C7355] transition-colors py-1 block"
                   >
                     {item.name}
                   </Link>
@@ -178,15 +225,20 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
                   <div className="h-px bg-[#D4C5B3] flex-1" />
                 </div>
 
-                <a
-                  href="https://www.airbnb.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2.5 w-full py-3 border border-[#D4C5B3] text-xs font-semibold uppercase tracking-wider text-[#3E3226] hover:border-[#8C7355] hover:text-[#8C7355] transition-colors bg-transparent"
-                >
-                  <AirbaseIcon className="text-[#8C7355]" />
-                  <span>Booking with Airbase</span>
-                </a>
+                <div className="flex items-center justify-center gap-3">
+                  {[
+                    "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901f4c7d0e0fb2320b9ae4e_instagram-image1.webp",
+                    "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901f4c718ea9eeea142e979_instagram-image2.webp",
+                    "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901f4c78759ebf0ba955745_instagram-image3.webp",
+                  ].map((src, i) => (
+                    <img
+                      key={i}
+                      src={src}
+                      alt="Partner"
+                      className="w-12 h-12 object-cover rounded-xs border border-[#E5DCCE]"
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

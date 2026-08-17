@@ -82,11 +82,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-16">
           {/* Brand & Reviews Column */}
           <div className="lg:col-span-4 space-y-5">
-            <Link href="/">
+            <Link href="/" className="inline-block">
               <img
-                src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901f22a1108ac6f33917525_logo-dark.svg"
-                alt="Asatha Resort Logo"
-                className="h-8 w-auto"
+                src="/images/logo.svg"
+                alt="Espresso Bolognese Logo"
+                className="h-12 w-auto"
               />
             </Link>
 
