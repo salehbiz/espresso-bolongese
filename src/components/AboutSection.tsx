@@ -10,13 +10,13 @@ export default function AboutSection() {
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8 mb-16 sm:mb-20 text-center">
         <div className="flex flex-col items-center justify-start gap-8 max-w-[700px] mx-auto">
           {/* Wave SVG Icon */}
-          <div className="svg-icon text-[#3D3D3D]">
+          <div className="svg-icon text-[#3E3226]">
             <WaveDivider />
           </div>
 
           {/* Heading */}
           <div className="home-about-heading-div max-w-[400px] mx-auto">
-            <h2 className="text-[#3D3D3D]">
+            <h2 className="text-[#3E3226]">
               Timeless luxury, <br className="hidden sm:inline" />
               <em className="wood-700-text">crafted for you</em>
             </h2>
@@ -43,7 +43,7 @@ export default function AboutSection() {
       <div className="w-full">
         <div className="grid grid-cols-1 md:grid-cols-6 gap-0 w-full">
           {/* Row 1, Image 1 (Spans 3 Columns = 50%) */}
-          <div className="md:col-span-3 img-zoom-container h-[300px] sm:h-[380px] lg:h-[400px] w-full bg-[#e4dcc4]">
+          <div className="md:col-span-3 img-zoom-container h-[300px] sm:h-[380px] lg:h-[400px] w-full bg-[#E5DCCE]">
             <img
               src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/690088c0717b22bee39e5ed1_home-about-image1.webp"
               alt="Resort pool loungers"
@@ -52,7 +52,7 @@ export default function AboutSection() {
           </div>
 
           {/* Row 1, Image 2 (Spans 3 Columns = 50%) */}
-          <div className="md:col-span-3 img-zoom-container h-[300px] sm:h-[380px] lg:h-[400px] w-full bg-[#e4dcc4]">
+          <div className="md:col-span-3 img-zoom-container h-[300px] sm:h-[380px] lg:h-[400px] w-full bg-[#E5DCCE]">
             <img
               src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/690088bed5355dda34e35de4_home-about-image2.webp"
               alt="Resort evening patio lounge"
@@ -61,7 +61,7 @@ export default function AboutSection() {
           </div>
 
           {/* Row 2, Image 3 (Spans 2 Columns = 33.333%) */}
-          <div className="md:col-span-2 img-zoom-container h-[260px] sm:h-[340px] lg:h-[400px] w-full bg-[#e4dcc4]">
+          <div className="md:col-span-2 img-zoom-container h-[260px] sm:h-[340px] lg:h-[400px] w-full bg-[#E5DCCE]">
             <img
               src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/690088be458ff5d001975320_home-about-image3.webp"
               alt="Beach umbrellas and ocean view"
@@ -70,7 +70,7 @@ export default function AboutSection() {
           </div>
 
           {/* Row 2, Image 4 (Spans 2 Columns = 33.333%) */}
-          <div className="md:col-span-2 img-zoom-container h-[260px] sm:h-[340px] lg:h-[400px] w-full bg-[#e4dcc4]">
+          <div className="md:col-span-2 img-zoom-container h-[260px] sm:h-[340px] lg:h-[400px] w-full bg-[#E5DCCE]">
             <img
               src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/690088be388271ca4925ad72_home-about-image4.webp"
               alt="Resort tropical architecture"
@@ -79,7 +79,7 @@ export default function AboutSection() {
           </div>
 
           {/* Row 2, Image 5 (Spans 2 Columns = 33.333%) */}
-          <div className="md:col-span-2 img-zoom-container h-[260px] sm:h-[340px] lg:h-[400px] w-full bg-[#e4dcc4]">
+          <div className="md:col-span-2 img-zoom-container h-[260px] sm:h-[340px] lg:h-[400px] w-full bg-[#E5DCCE]">
             <img
               src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/690088bfdd72485041516c8e_home-about-image5.webp"
               alt="Infinity pool view"

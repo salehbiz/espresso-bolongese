@@ -33,10 +33,10 @@ export default function ContactFaqSection() {
   };
 
   return (
-    <section className="section py-24 sm:py-32 bg-[#f8f6ef]">
+    <section className="section py-24 sm:py-32 bg-[#FAF7F2]">
       <div className="container max-w-[900px] mx-auto px-5 sm:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-[#3D3D3D]">Help &amp; FAQs</h2>
+          <h2 className="text-[#3E3226]">Help &amp; FAQs</h2>
         </div>
 
         <div className="space-y-4">
@@ -45,19 +45,19 @@ export default function ContactFaqSection() {
             return (
               <div
                 key={idx}
-                className="border-b border-[#e4dcc4] pb-4 transition-colors"
+                className="border-b border-[#E5DCCE] pb-4 transition-colors"
               >
                 <button
                   onClick={() => toggleFaq(idx)}
                   className="w-full flex items-center justify-between text-left py-3 cursor-pointer group"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-urbanist text-base sm:text-lg font-medium text-[#3D3D3D] group-hover:text-[#71553B] transition-colors pr-4">
+                  <span className="font-urbanist text-base sm:text-lg font-medium text-[#3E3226] group-hover:text-[#8C7355] transition-colors pr-4">
                     {faq.q}
                   </span>
                   <div
-                    className={`w-6 h-6 flex items-center justify-center shrink-0 text-[#3D3D3D] transition-transform duration-300 ${
-                      isOpen ? "rotate-180 text-[#71553B]" : ""
+                    className={`w-6 h-6 flex items-center justify-center shrink-0 text-[#3E3226] transition-transform duration-300 ${
+                      isOpen ? "rotate-180 text-[#8C7355]" : ""
                     }`}
                   >
                     <svg
@@ -76,7 +76,7 @@ export default function ContactFaqSection() {
                 </button>
 
                 {isOpen && (
-                  <div className="pt-2 pb-4 font-urbanist text-sm sm:text-base text-[#6D6D6D] leading-relaxed">
+                  <div className="pt-2 pb-4 font-urbanist text-sm sm:text-base text-[#7A6F64] leading-relaxed">
                     {faq.a}
                   </div>
                 )}

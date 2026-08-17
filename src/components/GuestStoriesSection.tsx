@@ -71,17 +71,17 @@ export default function GuestStoriesSection({
     setCurrentSlide((prev) => (prev + 1) % stories.length);
   };
 
-  const bgClass = variant === "wood-50" ? "bg-[#f8f6ef]" : "bg-white";
+  const bgClass = variant === "wood-50" ? "bg-[#FAF7F2]" : "bg-white";
 
   return (
     <section className={`section py-28 sm:py-36 ${bgClass}`}>
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <p className="large-paragraph mb-2 text-[#6D6D6D]">
+          <p className="large-paragraph mb-2 text-[#7A6F64]">
             200+ happy guests so far
           </p>
-          <h2 className="text-[#3D3D3D]">
+          <h2 className="text-[#3E3226]">
             Guest <em className="wood-700-text">stories</em>
           </h2>
         </div>
@@ -96,7 +96,7 @@ export default function GuestStoriesSection({
                 alt="Story logo"
                 className="h-4 sm:h-5 w-auto"
               />
-              <div className="w-8 h-px bg-[#e4dcc4]" />
+              <div className="w-8 h-px bg-[#E5DCCE]" />
               <img
                 src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901bbcc9476bdcaad055331_bddc6d983660d93780c71901fcd8217f_guest-story-review-star.svg"
                 alt="5 Stars"
@@ -105,16 +105,16 @@ export default function GuestStoriesSection({
             </div>
 
             {/* Testimonial Quote (Cardo Font) */}
-            <p className="font-cardo text-2xl sm:text-3xl md:text-[34px] text-[#3D3D3D] leading-relaxed font-normal mb-6">
+            <p className="font-cardo text-2xl sm:text-3xl md:text-[34px] text-[#3E3226] leading-relaxed font-normal mb-6">
               {stories[currentSlide].quote}
             </p>
 
             {/* Guest Info */}
             <div>
-              <div className="font-urbanist text-base font-semibold text-[#3D3D3D] mb-1">
+              <div className="font-urbanist text-base font-semibold text-[#3E3226] mb-1">
                 {stories[currentSlide].name}
               </div>
-              <div className="small-paragraph text-[#6D6D6D] uppercase tracking-wider text-xs">
+              <div className="small-paragraph text-[#7A6F64] uppercase tracking-wider text-xs">
                 {stories[currentSlide].details}
               </div>
             </div>
@@ -123,7 +123,7 @@ export default function GuestStoriesSection({
           {/* Left Arrow Button */}
           <button
             onClick={handlePrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 p-2 text-[#3D3D3D] hover:text-[#8B6843] transition-colors cursor-pointer"
+            className="absolute left-0 top-1/2 -translate-y-1/2 p-2 text-[#3E3226] hover:text-[#8C7355] transition-colors cursor-pointer"
             aria-label="Previous story"
           >
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +134,7 @@ export default function GuestStoriesSection({
           {/* Right Arrow Button */}
           <button
             onClick={handleNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 p-2 text-[#3D3D3D] hover:text-[#8B6843] transition-colors cursor-pointer"
+            className="absolute right-0 top-1/2 -translate-y-1/2 p-2 text-[#3E3226] hover:text-[#8C7355] transition-colors cursor-pointer"
             aria-label="Next story"
           >
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +150,7 @@ export default function GuestStoriesSection({
               {col.map((imgSrc, rIdx) => (
                 <div
                   key={rIdx}
-                  className="img-zoom-container relative h-[200px] sm:h-[260px] md:h-[320px] w-full overflow-hidden shadow-xs bg-[#f2efe2]"
+                  className="img-zoom-container relative h-[200px] sm:h-[260px] md:h-[320px] w-full overflow-hidden shadow-xs bg-[#F4ECE1]"
                 >
                   <img
                     src={imgSrc}

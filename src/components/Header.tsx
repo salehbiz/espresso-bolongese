@@ -80,7 +80,7 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
                 onClick={() => setMenuOpen(true)}
                 className={`flex items-center gap-2 px-3 py-2 text-xs font-bold uppercase tracking-[0.15em] transition-colors cursor-pointer ${
                   isDarkHeader
-                    ? "text-[#3D3D3D] hover:text-[#8B6843]"
+                    ? "text-[#3E3226] hover:text-[#8C7355]"
                     : "text-white hover:text-white/80"
                 }`}
                 aria-label="Open menu"
@@ -116,10 +116,10 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
           />
 
           {/* Drawer Panel */}
-          <div className="relative w-full max-w-[420px] bg-[#f8f6ef] h-full shadow-2xl p-8 sm:p-12 flex flex-col justify-between overflow-y-auto z-10 border-l border-[#e4dcc4]">
+          <div className="relative w-full max-w-[420px] bg-[#FAF7F2] h-full shadow-2xl p-8 sm:p-12 flex flex-col justify-between overflow-y-auto z-10 border-l border-[#E5DCCE]">
             <div>
               {/* Header inside drawer */}
-              <div className="flex items-center justify-between pb-8 mb-8 border-b border-[#e4dcc4]">
+              <div className="flex items-center justify-between pb-8 mb-8 border-b border-[#E5DCCE]">
                 <img
                   src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901f22a1108ac6f33917525_logo-dark.svg"
                   alt="Logo"
@@ -127,7 +127,7 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
                 />
                 <button
                   onClick={() => setMenuOpen(false)}
-                  className="p-2 text-[#3D3D3D] hover:text-[#8B6843] transition-colors"
+                  className="p-2 text-[#3E3226] hover:text-[#8C7355] transition-colors"
                   aria-label="Close menu"
                 >
                   <CloseIcon />
@@ -146,7 +146,7 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
                     key={item.name}
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
-                    className="font-cardo text-2xl text-[#3D3D3D] hover:text-[#8B6843] transition-colors py-1 block"
+                    className="font-cardo text-2xl text-[#3E3226] hover:text-[#8C7355] transition-colors py-1 block"
                   >
                     {item.name}
                   </Link>
@@ -155,7 +155,7 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
             </div>
 
             {/* Bottom Actions inside drawer */}
-            <div className="mt-12 pt-8 border-t border-[#e4dcc4]">
+            <div className="mt-12 pt-8 border-t border-[#E5DCCE]">
               <button
                 onClick={() => {
                   setMenuOpen(false);
@@ -171,20 +171,20 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
 
               <div className="text-center">
                 <div className="flex items-center justify-center gap-3 mb-4">
-                  <div className="h-px bg-[#cdbba2] flex-1" />
-                  <span className="text-xs text-[#6D6D6D] uppercase tracking-wider font-semibold">
+                  <div className="h-px bg-[#D4C5B3] flex-1" />
+                  <span className="text-xs text-[#7A6F64] uppercase tracking-wider font-semibold">
                     Or booking with partners
                   </span>
-                  <div className="h-px bg-[#cdbba2] flex-1" />
+                  <div className="h-px bg-[#D4C5B3] flex-1" />
                 </div>
 
                 <a
                   href="https://www.airbnb.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2.5 w-full py-3 border border-[#cdbba2] text-xs font-semibold uppercase tracking-wider text-[#3D3D3D] hover:border-[#8B6843] hover:text-[#8B6843] transition-colors bg-transparent"
+                  className="inline-flex items-center justify-center gap-2.5 w-full py-3 border border-[#D4C5B3] text-xs font-semibold uppercase tracking-wider text-[#3E3226] hover:border-[#8C7355] hover:text-[#8C7355] transition-colors bg-transparent"
                 >
-                  <AirbaseIcon className="text-[#8B6843]" />
+                  <AirbaseIcon className="text-[#8C7355]" />
                   <span>Booking with Airbase</span>
                 </a>
               </div>

@@ -171,7 +171,7 @@ export function WebflowLogoIcon({ className = "" }: { className?: string }) {
 export function SlashDivider({ className = "" }: { className?: string }) {
   return (
     <svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-      <path d="M6.14062 0H7.66406L1.51172 17.332H0L6.14062 0Z" fill="#6D6D6D"/>
+      <path d="M6.14062 0H7.66406L1.51172 17.332H0L6.14062 0Z" fill="#7A6F64"/>
     </svg>
   );
 }

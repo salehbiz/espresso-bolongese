@@ -40,15 +40,15 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#f2efe2] pt-20 pb-12 border-t border-[#e4dcc4]">
+    <footer className="bg-[#F4ECE1] pt-20 pb-12 border-t border-[#E5DCCE]">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Newsletter Section */}
-        <div className="bg-white p-8 sm:p-12 lg:p-16 shadow-xs border border-[#e4dcc4] mb-16 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div className="bg-white p-8 sm:p-12 lg:p-16 shadow-xs border border-[#E5DCCE] mb-16 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="max-w-[540px]">
             <h3 className="wood-800-text text-3xl sm:text-4xl mb-3">
               Get inspired
             </h3>
-            <p className="large-paragraph newsletter-paragraph text-[#71553b]">
+            <p className="large-paragraph newsletter-paragraph text-[#8C7355]">
               To receive updates about exclusive experiences, events, new
               destinations and more, please register your interest.
             </p>
@@ -56,7 +56,7 @@ export default function Footer() {
 
           <div className="w-full lg:w-auto min-w-[300px] sm:min-w-[420px]">
             {subscribed ? (
-              <div className="bg-[#f8f6ef] text-[#71553b] text-sm font-semibold py-4 px-6 text-center border border-[#e4dcc4]">
+              <div className="bg-[#FAF7F2] text-[#8C7355] text-sm font-semibold py-4 px-6 text-center border border-[#E5DCCE]">
                 Thank you! Your submission has been received!
               </div>
             ) : (
@@ -70,7 +70,7 @@ export default function Footer() {
                   placeholder="Email Address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="px-5 py-3.5 bg-[#f8f6ef] border border-[#e4dcc4] text-sm text-[#3D3D3D] focus:outline-none focus:border-[#71553b] flex-1"
+                  className="px-5 py-3.5 bg-[#FAF7F2] border border-[#E5DCCE] text-sm text-[#3E3226] focus:outline-none focus:border-[#8C7355] flex-1"
                 />
                 <button
                   type="submit"
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-[#e4dcc4] mb-16" />
+        <div className="w-full h-px bg-[#E5DCCE] mb-16" />
 
         {/* 5-Column Navigation Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-16">
@@ -113,7 +113,7 @@ export default function Footer() {
                   </svg>
                 ))}
               </div>
-              <span className="text-xs font-semibold text-[#71553b]">
+              <span className="text-xs font-semibold text-[#8C7355]">
                 4.9 | 15k+ Reviews
               </span>
             </div>
@@ -131,7 +131,7 @@ export default function Footer() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 flex items-center justify-center border border-[#e4dcc4] text-[#71553b] hover:border-[#71553b] hover:text-[#3D3D3D] transition-colors bg-[#f8f6ef]"
+                  className="w-10 h-10 flex items-center justify-center border border-[#E5DCCE] text-[#8C7355] hover:border-[#8C7355] hover:text-[#3E3226] transition-colors bg-[#FAF7F2]"
                 >
                   {item.icon}
                 </a>
@@ -141,7 +141,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-urbanist text-xs font-bold uppercase tracking-widest text-[#71553b]">
+            <h4 className="font-urbanist text-xs font-bold uppercase tracking-widest text-[#8C7355]">
               Quick Links
             </h4>
             <ul className="space-y-2.5 text-sm">
@@ -154,7 +154,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="large-paragraph footer-text-link text-[#71553b] hover:text-[#3D3D3D] transition-colors"
+                    className="large-paragraph footer-text-link text-[#8C7355] hover:text-[#3E3226] transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -165,7 +165,7 @@ export default function Footer() {
 
           {/* Utility */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-urbanist text-xs font-bold uppercase tracking-widest text-[#71553b]">
+            <h4 className="font-urbanist text-xs font-bold uppercase tracking-widest text-[#8C7355]">
               Utility
             </h4>
             <ul className="space-y-2.5 text-sm">
@@ -179,7 +179,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="large-paragraph footer-text-link text-[#71553b] hover:text-[#3D3D3D] transition-colors"
+                    className="large-paragraph footer-text-link text-[#8C7355] hover:text-[#3E3226] transition-colors"
                   >
                     {link.name}
                   </a>
@@ -190,28 +190,28 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-urbanist text-xs font-bold uppercase tracking-widest text-[#71553b]">
+            <h4 className="font-urbanist text-xs font-bold uppercase tracking-widest text-[#8C7355]">
               Contact
             </h4>
-            <p className="large-paragraph footer-paragraph text-[#71553b] text-sm leading-relaxed">
+            <p className="large-paragraph footer-paragraph text-[#8C7355] text-sm leading-relaxed">
               123 Jl. Labuan Sait No. 88, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia
             </p>
             <div className="space-y-1 text-sm pt-2">
-              <div className="text-[#71553b]">
-                P: <span className="text-[#3D3D3D] font-medium">+62 812 3456 7890</span>
+              <div className="text-[#8C7355]">
+                P: <span className="text-[#3E3226] font-medium">+62 812 3456 7890</span>
               </div>
-              <div className="text-[#71553b]">
-                E: <span className="text-[#3D3D3D] font-medium">stay@asatha.com</span>
+              <div className="text-[#8C7355]">
+                E: <span className="text-[#3E3226] font-medium">stay@asatha.com</span>
               </div>
-              <div className="text-[#71553b]">
-                Reception: <span className="text-[#3D3D3D] font-medium">WhatsApp</span>
+              <div className="text-[#8C7355]">
+                Reception: <span className="text-[#3E3226] font-medium">WhatsApp</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-[#e4dcc4] mb-10" />
+        <div className="w-full h-px bg-[#E5DCCE] mb-10" />
 
         {/* 5-Photo Instagram Strip with Floating Pill */}
         <div className="relative mb-12">
@@ -221,7 +221,7 @@ export default function Footer() {
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-6 py-3 bg-white border border-[#e4dcc4] text-xs font-bold uppercase tracking-wider text-[#3D3D3D] hover:bg-[#8B6843] hover:text-white transition-colors shadow-md"
+              className="inline-flex items-center gap-2.5 px-6 py-3 bg-white border border-[#E5DCCE] text-xs font-bold uppercase tracking-wider text-[#3E3226] hover:bg-[#8C7355] hover:text-white transition-colors shadow-md"
             >
               <SocialInstagramIcon />
               <span>Follow @ASATHA</span>
@@ -236,7 +236,7 @@ export default function Footer() {
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="img-zoom-container relative h-32 sm:h-44 w-full overflow-hidden bg-[#e4dcc4] shadow-xs"
+                className="img-zoom-container relative h-32 sm:h-44 w-full overflow-hidden bg-[#E5DCCE] shadow-xs"
               >
                 <img
                   src={src}
@@ -249,10 +249,10 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-[#e4dcc4] mb-8" />
+        <div className="w-full h-px bg-[#E5DCCE] mb-8" />
 
         {/* Bottom Copyright Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-[#71553bb3]">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-[#8C7355b3]">
           <div>
             © ASATHA - VILLA AND RESORT.
           </div>
@@ -262,7 +262,7 @@ export default function Footer() {
               href="https://flowcub.com/?utm_source=webflow&utm_medium=asatha-luxury"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#3D3D3D] hover:text-[#71553b] transition-colors"
+              className="inline-flex items-center gap-2 text-[#3E3226] hover:text-[#8C7355] transition-colors"
             >
               <span>Made by</span>
               <FlowcubIcon />
@@ -273,7 +273,7 @@ export default function Footer() {
               href="https://webflow.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#3D3D3D] hover:text-[#71553b] transition-colors"
+              className="inline-flex items-center gap-2 text-[#3E3226] hover:text-[#8C7355] transition-colors"
             >
               <span>Powered by</span>
               <WebflowLogoIcon />
@@ -284,7 +284,7 @@ export default function Footer() {
           {/* Scroll to Top Button */}
           <button
             onClick={scrollToTop}
-            className="w-9 h-9 flex items-center justify-center bg-[#71553b] hover:bg-[#8B6843] text-white transition-colors cursor-pointer"
+            className="w-9 h-9 flex items-center justify-center bg-[#8C7355] hover:bg-[#8C7355] text-white transition-colors cursor-pointer"
             aria-label="Scroll to top"
           >
             <TopArrowIcon />

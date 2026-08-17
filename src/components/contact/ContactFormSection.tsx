@@ -25,18 +25,18 @@ export default function ContactFormSection() {
       <div className="container max-w-[1000px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="text-center mb-16 max-w-[540px] mx-auto">
-          <h2 className="text-[#3D3D3D] mb-4">
+          <h2 className="text-[#3E3226] mb-4">
             Contact <em className="wood-700-text font-cardo italic">form</em>
           </h2>
-          <p className="large-paragraph text-[#6D6D6D] leading-relaxed">
+          <p className="large-paragraph text-[#7A6F64] leading-relaxed">
             Fill out the form below and let us help you plan your perfect getaway.
           </p>
         </div>
 
         {submitted ? (
-          <div className="bg-[#f8f6ef] border border-[#e4dcc4] p-10 text-center">
-            <h3 className="font-cardo text-2xl text-[#3D3D3D] mb-2">Thank you!</h3>
-            <p className="font-urbanist text-[#71553B] text-base">
+          <div className="bg-[#FAF7F2] border border-[#E5DCCE] p-10 text-center">
+            <h3 className="font-cardo text-2xl text-[#3E3226] mb-2">Thank you!</h3>
+            <p className="font-urbanist text-[#8C7355] text-base">
               Your submission has been received! Our reservations team will reach out within 24 hours.
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function ContactFormSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {/* Full Name */}
               <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-[#3D3D3D] mb-2">
+                <label className="block text-xs font-semibold uppercase tracking-wider text-[#3E3226] mb-2">
                   Full Name*
                 </label>
                 <input
@@ -56,13 +56,13 @@ export default function ContactFormSection() {
                   onChange={(e) =>
                     setFormData({ ...formData, fullName: e.target.value })
                   }
-                  className="w-full px-5 py-3.5 bg-white border border-[#e4dcc4] text-sm text-[#3D3D3D] focus:outline-none focus:border-[#71553B] transition-colors"
+                  className="w-full px-5 py-3.5 bg-white border border-[#E5DCCE] text-sm text-[#3E3226] focus:outline-none focus:border-[#8C7355] transition-colors"
                 />
               </div>
 
               {/* Email Address */}
               <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-[#3D3D3D] mb-2">
+                <label className="block text-xs font-semibold uppercase tracking-wider text-[#3E3226] mb-2">
                   Email Address*
                 </label>
                 <input
@@ -73,13 +73,13 @@ export default function ContactFormSection() {
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
                   }
-                  className="w-full px-5 py-3.5 bg-white border border-[#e4dcc4] text-sm text-[#3D3D3D] focus:outline-none focus:border-[#71553B] transition-colors"
+                  className="w-full px-5 py-3.5 bg-white border border-[#E5DCCE] text-sm text-[#3E3226] focus:outline-none focus:border-[#8C7355] transition-colors"
                 />
               </div>
 
               {/* Phone Number */}
               <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-[#3D3D3D] mb-2">
+                <label className="block text-xs font-semibold uppercase tracking-wider text-[#3E3226] mb-2">
                   Phone Number*
                 </label>
                 <input
@@ -90,13 +90,13 @@ export default function ContactFormSection() {
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })
                   }
-                  className="w-full px-5 py-3.5 bg-white border border-[#e4dcc4] text-sm text-[#3D3D3D] focus:outline-none focus:border-[#71553B] transition-colors"
+                  className="w-full px-5 py-3.5 bg-white border border-[#E5DCCE] text-sm text-[#3E3226] focus:outline-none focus:border-[#8C7355] transition-colors"
                 />
               </div>
 
               {/* Subject */}
               <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-[#3D3D3D] mb-2">
+                <label className="block text-xs font-semibold uppercase tracking-wider text-[#3E3226] mb-2">
                   Subject*
                 </label>
                 <select
@@ -105,7 +105,7 @@ export default function ContactFormSection() {
                   onChange={(e) =>
                     setFormData({ ...formData, subject: e.target.value })
                   }
-                  className="w-full px-5 py-3.5 bg-white border border-[#e4dcc4] text-sm text-[#3D3D3D] focus:outline-none focus:border-[#71553B] transition-colors"
+                  className="w-full px-5 py-3.5 bg-white border border-[#E5DCCE] text-sm text-[#3E3226] focus:outline-none focus:border-[#8C7355] transition-colors"
                 >
                   <option value="">Select one...</option>
                   <option value="Booking Enquiry">Booking Enquiry</option>
@@ -123,7 +123,7 @@ export default function ContactFormSection() {
 
             {/* Message */}
             <div>
-              <label className="block text-xs font-semibold uppercase tracking-wider text-[#3D3D3D] mb-2">
+              <label className="block text-xs font-semibold uppercase tracking-wider text-[#3E3226] mb-2">
                 Message
               </label>
               <textarea
@@ -133,7 +133,7 @@ export default function ContactFormSection() {
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
                 }
-                className="w-full px-5 py-3.5 bg-white border border-[#e4dcc4] text-sm text-[#3D3D3D] focus:outline-none focus:border-[#71553B] transition-colors"
+                className="w-full px-5 py-3.5 bg-white border border-[#E5DCCE] text-sm text-[#3E3226] focus:outline-none focus:border-[#8C7355] transition-colors"
               />
             </div>
 
@@ -147,13 +147,13 @@ export default function ContactFormSection() {
                 onChange={(e) =>
                   setFormData({ ...formData, agreed: e.target.checked })
                 }
-                className="w-4 h-4 accent-[#71553B] cursor-pointer"
+                className="w-4 h-4 accent-[#8C7355] cursor-pointer"
               />
               <label
                 htmlFor="terms"
-                className="text-xs sm:text-sm font-urbanist text-[#6D6D6D] cursor-pointer select-none"
+                className="text-xs sm:text-sm font-urbanist text-[#7A6F64] cursor-pointer select-none"
               >
-                I agree with the <span className="text-[#3D3D3D] font-semibold underline">Terms & Conditions</span>
+                I agree with the <span className="text-[#3E3226] font-semibold underline">Terms & Conditions</span>
               </label>
             </div>
 

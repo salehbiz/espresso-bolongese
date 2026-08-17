@@ -32,7 +32,7 @@ export default function RewardsSection() {
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="max-w-[650px] mx-auto text-center mb-16 sm:mb-20">
-          <h2 className="text-[#3D3D3D] mb-4">
+          <h2 className="text-[#3E3226] mb-4">
             Asatha <em className="wood-700-text">Rewards</em>
           </h2>
           <p className="large-paragraph reward-paragraph text-center">
@@ -45,7 +45,7 @@ export default function RewardsSection() {
           {rewards.map((item, idx) => (
             <div key={idx} className="flex flex-col">
               {/* Image Container */}
-              <div className="img-zoom-container relative h-[260px] sm:h-[320px] lg:h-[360px] w-full overflow-hidden mb-6 bg-[#e4dcc4]">
+              <div className="img-zoom-container relative h-[260px] sm:h-[320px] lg:h-[360px] w-full overflow-hidden mb-6 bg-[#E5DCCE]">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -55,10 +55,10 @@ export default function RewardsSection() {
 
               {/* Title & Description */}
               <div>
-                <div className="h6-heading text-[#3D3D3D] mb-3">
+                <div className="h6-heading text-[#3E3226] mb-3">
                   {item.title}
                 </div>
-                <p className="paragraph text-[#6D6D6D] leading-relaxed">
+                <p className="paragraph text-[#7A6F64] leading-relaxed">
                   {item.description}
                 </p>
               </div>

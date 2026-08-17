@@ -36,7 +36,7 @@ export default function PackagesSection({ onOpenModal }: PackagesSectionProps) {
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="text-center mb-16 sm:mb-24">
-          <h2 className="text-[#3D3D3D]">
+          <h2 className="text-[#3E3226]">
             Popular <em className="wood-700-text">Packages</em>
           </h2>
         </div>
@@ -65,20 +65,20 @@ export default function PackagesSection({ onOpenModal }: PackagesSectionProps) {
                       className="h-6 w-auto"
                     />
                     <SlashDivider />
-                    <div className="flex items-baseline gap-1 text-sm text-[#3D3D3D]">
-                      <span className="text-[#6D6D6D]">from </span>
-                      <strong className="font-semibold text-[#3D3D3D] text-base">
+                    <div className="flex items-baseline gap-1 text-sm text-[#3E3226]">
+                      <span className="text-[#7A6F64]">from </span>
+                      <strong className="font-semibold text-[#3E3226] text-base">
                         {pkg.price}
                       </strong>
-                      <span className="text-[#6D6D6D]">/night</span>
+                      <span className="text-[#7A6F64]">/night</span>
                     </div>
                   </div>
 
-                  <h2 className="text-[#3D3D3D] text-3xl sm:text-4xl md:text-[44px] mb-5 font-normal">
+                  <h2 className="text-[#3E3226] text-3xl sm:text-4xl md:text-[44px] mb-5 font-normal">
                     {pkg.title}
                   </h2>
 
-                  <p className="large-paragraph package-paragraph mb-8 text-[#6D6D6D]">
+                  <p className="large-paragraph package-paragraph mb-8 text-[#7A6F64]">
                     {pkg.description}
                   </p>
                 </div>
@@ -102,7 +102,7 @@ export default function PackagesSection({ onOpenModal }: PackagesSectionProps) {
                   pkg.reverse ? "lg:col-start-1" : ""
                 }`}
               >
-                <div className="img-zoom-container relative w-full h-full min-h-[340px] sm:min-h-[460px] shadow-xs bg-[#e4dcc4]">
+                <div className="img-zoom-container relative w-full h-full min-h-[340px] sm:min-h-[460px] shadow-xs bg-[#E5DCCE]">
                   <img
                     src={pkg.image}
                     alt={pkg.title}

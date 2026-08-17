@@ -46,7 +46,7 @@ export default function VideoLightboxModal({
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 p-2 bg-black/60 hover:bg-[#8B6843] text-white transition-colors cursor-pointer"
+          className="absolute top-4 right-4 z-20 p-2 bg-black/60 hover:bg-[#8C7355] text-white transition-colors cursor-pointer"
           aria-label="Close video"
         >
           <CloseIcon />

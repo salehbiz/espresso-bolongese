@@ -26,7 +26,7 @@ export default function WellnessExperiencesSection() {
     <section className="section py-24 sm:py-32 bg-white">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         <div className="text-center mb-16 max-w-[500px] mx-auto">
-          <h2 className="text-[#3D3D3D]">
+          <h2 className="text-[#3E3226]">
             Wellness <em className="wood-700-text font-cardo italic">Experiences</em>
           </h2>
         </div>
@@ -34,7 +34,7 @@ export default function WellnessExperiencesSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
           {experiences.map((exp, idx) => (
             <div key={idx} className="flex flex-col group">
-              <div className="img-zoom-container relative h-[280px] sm:h-[340px] lg:h-[380px] w-full overflow-hidden shadow-xs bg-[#f8f6ef] mb-6">
+              <div className="img-zoom-container relative h-[280px] sm:h-[340px] lg:h-[380px] w-full overflow-hidden shadow-xs bg-[#FAF7F2] mb-6">
                 <img
                   src={exp.image}
                   alt={`${exp.titlePrefix} ${exp.titleHighlight}`}
@@ -43,13 +43,13 @@ export default function WellnessExperiencesSection() {
               </div>
 
               <div>
-                <h3 className="font-cardo text-2xl sm:text-3xl text-[#3D3D3D] mb-3">
+                <h3 className="font-cardo text-2xl sm:text-3xl text-[#3E3226] mb-3">
                   {exp.titlePrefix}{" "}
                   <em className="wood-700-text font-cardo italic">
                     {exp.titleHighlight}
                   </em>
                 </h3>
-                <p className="font-urbanist text-sm sm:text-base text-[#6D6D6D] leading-relaxed">
+                <p className="font-urbanist text-sm sm:text-base text-[#7A6F64] leading-relaxed">
                   {exp.description}
                 </p>
               </div>

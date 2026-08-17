@@ -1,17 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand Colors */
-  --brand-brown: #8C7355;
-  --brand-cream: #FAF7F2;
-  --brand-white: #FFFFFF;
-  --brand-dark: #3E3226;
-  --accent-green: #2E7D46;
-  --accent-red: #C93A35;
+  /* Core Brand Color Tokens */
+  --brand-dark: #3E3226;          /* Rich Deep Espresso Brown */
+  --brand-espresso: #2D2319;      /* Ultra deep espresso */
+  --brand-brown: #8C7355;         /* Toasted brown / primary brand surface */
+  --brand-brown-light: #A48B6D;   /* Subtle lighter toasted brown */
+  --brand-cream: #FAF7F2;         /* Warm soft cream page background */
+  --brand-cream-soft: #F4ECE1;    /* Soft secondary cream */
+  --brand-border: #E5DCCE;        /* Subtle toasted cream border */
+  --brand-border-dark: #D4C5B3;   /* Toasted accent border */
+  --brand-muted: #7A6F64;         /* Toasted warm gray-brown for body text */
+  --brand-white: #FFFFFF;         /* Crisp white for cards/text on brown */
+  --accent-green: #2E7D46;        /* Subtle accent green */
+  --accent-red: #C93A35;          /* Accent red for primary CTAs */
 
   /* Typography */
   --font-heading: var(--font-heading), "Barlow Semi Condensed", -apple-system, sans-serif;
   --font-body: var(--font-body), "Barlow", -apple-system, sans-serif;
+
+  /* Legacy color mappings mapped to espresso & cream theme */
+  --wood-50: var(--brand-cream);
+  --wood-100: var(--brand-cream-soft);
+  --wood-200: var(--brand-border);
+  --wood-700: var(--brand-brown);
+  --wood-800: var(--brand-dark);
+  --wood-870: rgba(62, 50, 38, 0.8);
+  --gray-900: var(--brand-dark);
+  --gray-500: var(--brand-muted);
 }
 
 @theme {
@@ -20,10 +36,24 @@
 
   --color-brand-brown: var(--brand-brown);
   --color-brand-cream: var(--brand-cream);
+  --color-brand-cream-soft: var(--brand-cream-soft);
+  --color-brand-border: var(--brand-border);
   --color-brand-white: var(--brand-white);
   --color-brand-dark: var(--brand-dark);
+  --color-brand-muted: var(--brand-muted);
   --color-accent-green: var(--accent-green);
   --color-accent-red: var(--accent-red);
+
+  --color-wood-50: #FAF7F2;
+  --color-wood-100: #F4ECE1;
+  --color-wood-200: #E5DCCE;
+  --color-wood-300: #D4C5B3;
+  --color-wood-600: #8C7355;
+  --color-wood-700: #8C7355;
+  --color-wood-800: #3E3226;
+  --color-wood-870: #3E3226cc;
+  --color-dark-900: #3E3226;
+  --color-gray-500: #7A6F64;
 
   --radius-sm: 4px;
   --radius-md: 6px;
@@ -52,7 +82,7 @@
     font-family: var(--font-heading);
     letter-spacing: -0.01em;
     font-weight: 600;
-    color: inherit;
+    color: var(--brand-dark);
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -87,7 +117,7 @@
     line-height: 1.4;
   }
 
-  h6 {
+  h6, .h6-heading {
     font-weight: 600;
     font-size: 1.1rem;
     line-height: 1.4;
@@ -100,10 +130,144 @@
     margin-bottom: 0;
   }
 
+  em, i {
+    font-style: italic;
+    font-family: inherit;
+  }
+
   /* Max border radius constraint */
   * {
     border-radius: min(8px, inherit);
   }
+}
+
+/* Color utility classes */
+.wood-700-text {
+  color: var(--brand-brown) !important;
+}
+
+.wood-800-text {
+  color: var(--brand-dark) !important;
+}
+
+.wood-870-text {
+  color: rgba(62, 50, 38, 0.8) !important;
+}
+
+.white-text {
+  color: var(--brand-white) !important;
+}
+
+.bg-wood-50 {
+  background-color: var(--brand-cream) !important;
+}
+
+.bg-wood-100 {
+  background-color: var(--brand-cream-soft) !important;
+}
+
+.bg-wood-200 {
+  background-color: var(--brand-border) !important;
+}
+
+/* Paragraph styles */
+.large-paragraph {
+  font-family: var(--font-body);
+  color: var(--brand-muted);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .large-paragraph {
+    font-size: 16px;
+  }
+}
+
+.paragraph {
+  font-family: var(--font-body);
+  color: var(--brand-muted);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 0;
+}
+
+.small-paragraph {
+  font-family: var(--font-body);
+  color: var(--brand-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0;
+}
+
+.small-paragraph.hero-review-text {
+  color: var(--brand-white);
+}
+
+/* Premium Button with sliding roll interaction */
+.webflow-button {
+  position: relative;
+  display: inline-block;
+  height: 52px;
+  padding: 0 32px;
+  background-color: var(--brand-dark);
+  color: var(--brand-white);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid var(--brand-dark);
+  border-radius: 6px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.webflow-button .btn-text-wrapper {
+  position: relative;
+  display: block;
+  height: 52px;
+  overflow: hidden;
+}
+
+.webflow-button .btn-text {
+  display: block;
+  height: 52px;
+  line-height: 52px;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  white-space: nowrap;
+}
+
+.webflow-button:hover .btn-text-1 {
+  transform: translateY(-100%);
+}
+
+.webflow-button:hover .btn-text-2 {
+  transform: translateY(-100%);
+}
+
+.webflow-button.btn-white {
+  background-color: transparent;
+  color: var(--brand-white);
+  border: 1px solid var(--brand-white);
+}
+
+.webflow-button.btn-white:hover {
+  background-color: var(--brand-white);
+  color: var(--brand-dark);
+}
+
+.webflow-button:not(.btn-white):hover {
+  background-color: var(--brand-brown);
+  border-color: var(--brand-brown);
+  color: var(--brand-white);
 }
 
 /* Primary Brand CTA (Red reserved for primary CTA only) */
@@ -152,6 +316,42 @@
 .brand-cta-secondary:hover {
   background-color: var(--brand-brown);
   color: var(--brand-white);
+}
+
+/* Image Zoom on hover */
+.img-zoom-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+}
+
+.img-zoom-container img {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-zoom-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Text Underline Link */
+.text-underline-link {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--brand-dark);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--brand-dark);
+  padding-bottom: 2px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  display: inline-block;
+}
+
+.text-underline-link:hover {
+  color: var(--brand-brown);
+  border-color: var(--brand-brown);
 }
 
 /* Accent corner brackets mirroring the logo style */

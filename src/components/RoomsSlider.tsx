@@ -77,10 +77,10 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="common-heading-div mb-12 sm:mb-16">
-          <h2 className="text-[#3D3D3D]">
+          <h2 className="text-[#3E3226]">
             Rooms &amp; Suites
           </h2>
-          <p className="large-paragraph text-[#6D6D6D]">
+          <p className="large-paragraph text-[#7A6F64]">
             Discover spaces designed for unhurried living.
           </p>
         </div>
@@ -112,7 +112,7 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
                   onClick={onOpenModal}
                 >
                   {/* Sharp Image with Hover Zoom */}
-                  <div className="villa-thumb-image-div img-zoom-container relative h-[280px] sm:h-[360px] md:h-[400px] w-full overflow-hidden mb-6 bg-[#f2efe2]">
+                  <div className="villa-thumb-image-div img-zoom-container relative h-[280px] sm:h-[360px] md:h-[400px] w-full overflow-hidden mb-6 bg-[#F4ECE1]">
                     <img
                       src={villa.image}
                       alt={villa.title}
@@ -123,10 +123,10 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
 
                   {/* Title & Specs */}
                   <div className="villa-slider-detail-div mb-4">
-                    <div className="h6-heading text-[#3D3D3D] group-hover:text-[#8B6843] transition-colors mb-2">
+                    <div className="h6-heading text-[#3E3226] group-hover:text-[#8C7355] transition-colors mb-2">
                       {villa.title}
                     </div>
-                    <p className="small-paragraph villa-paragraph text-[#6D6D6D] max-w-[320px] leading-relaxed">
+                    <p className="small-paragraph villa-paragraph text-[#7A6F64] max-w-[320px] leading-relaxed">
                       {villa.specs}
                     </p>
                   </div>
@@ -150,8 +150,8 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
                 onClick={() => setCurrentIndex(i)}
                 className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
                   currentIndex === i
-                    ? "bg-[#3D3D3D] scale-125"
-                    : "bg-[#cdbba2] hover:bg-[#8B6843]"
+                    ? "bg-[#3E3226] scale-125"
+                    : "bg-[#D4C5B3] hover:bg-[#8C7355]"
                 }`}
                 aria-label={`Go to slide ${i + 1}`}
               />

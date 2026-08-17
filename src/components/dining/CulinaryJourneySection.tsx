@@ -25,10 +25,10 @@ export default function CulinaryJourneySection() {
   ];
 
   return (
-    <section className="section py-24 sm:py-32 bg-[#f8f6ef]">
+    <section className="section py-24 sm:py-32 bg-[#FAF7F2]">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         <div className="text-center mb-16 max-w-[500px] mx-auto">
-          <h2 className="text-[#3D3D3D]">
+          <h2 className="text-[#3E3226]">
             A culinary <em className="wood-700-text font-cardo italic">Journey awaits</em>
           </h2>
         </div>
@@ -37,7 +37,7 @@ export default function CulinaryJourneySection() {
           {images.map((item, idx) => (
             <div
               key={idx}
-              className={`img-zoom-container relative h-[320px] sm:h-[380px] w-full overflow-hidden shadow-xs bg-[#e4dcc4] ${
+              className={`img-zoom-container relative h-[320px] sm:h-[380px] w-full overflow-hidden shadow-xs bg-[#E5DCCE] ${
                 item.offset ? "lg:-translate-y-5" : ""
               } transition-transform duration-300`}
             >

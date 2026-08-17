@@ -24,12 +24,12 @@ export default function EscapeToBlissSection({
         {/* Top Header Row */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 sm:gap-12 mb-12 sm:mb-16">
           <div className="max-w-[420px]">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl text-[#3D3D3D]">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl text-[#3E3226]">
               Escape to <em className="wood-700-text">Bliss.</em>
             </h2>
           </div>
 
-          <p className="large-paragraph text-[#6D6D6D] max-w-[540px] leading-relaxed">
+          <p className="large-paragraph text-[#7A6F64] max-w-[540px] leading-relaxed">
             Discover a perfect balance of refined luxury and natural wonder at
             Asatha. Every moment here is designed to linger — from sunrise yoga
             to sunsets that silence the world around you.
@@ -93,10 +93,10 @@ export default function EscapeToBlissSection({
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 max-w-[1200px] mx-auto text-center lg:text-left">
           {stats.map((item, idx) => (
             <div key={idx} className="flex flex-col gap-1.5">
-              <h2 className="font-urbanist text-4xl sm:text-5xl md:text-[56px] font-medium text-[#3D3D3D] leading-none tracking-tight">
+              <h2 className="font-urbanist text-4xl sm:text-5xl md:text-[56px] font-medium text-[#3E3226] leading-none tracking-tight">
                 {item.number}
               </h2>
-              <div className="font-urbanist text-base sm:text-lg text-[#6D6D6D] font-medium">
+              <div className="font-urbanist text-base sm:text-lg text-[#7A6F64] font-medium">
                 {item.label}
               </div>
             </div>

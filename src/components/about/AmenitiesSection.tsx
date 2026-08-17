@@ -61,17 +61,17 @@ export default function AmenitiesSection({ onOpenModal }: AmenitiesSectionProps)
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-white border-t border-[#f2efe2]">
+    <section className="py-24 sm:py-32 bg-white border-t border-[#F4ECE1]">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Top Header Row */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 sm:gap-12 mb-16 sm:mb-20">
           <div className="max-w-[420px]">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl text-[#3D3D3D]">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl text-[#3E3226]">
               Amenities
             </h2>
           </div>
 
-          <p className="large-paragraph text-[#6D6D6D] max-w-[540px] leading-relaxed">
+          <p className="large-paragraph text-[#7A6F64] max-w-[540px] leading-relaxed">
             Luxury is found in details, both grand and subtle. Our curated
             facilities are designed to inspire balance and ease.
           </p>
@@ -95,7 +95,7 @@ export default function AmenitiesSection({ onOpenModal }: AmenitiesSectionProps)
               onClick={onOpenModal}
             >
               {/* Circular Image Mask */}
-              <div className="relative w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full overflow-hidden shadow-sm bg-[#f2efe2]">
+              <div className="relative w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full overflow-hidden shadow-sm bg-[#F4ECE1]">
                 <img
                   src={item.image}
                   alt={item.name}
@@ -112,7 +112,7 @@ export default function AmenitiesSection({ onOpenModal }: AmenitiesSectionProps)
               </div>
 
               {/* Label Underneath */}
-              <h3 className="font-urbanist text-base sm:text-lg font-medium text-[#3D3D3D] group-hover:text-[#8B6843] transition-colors leading-snug">
+              <h3 className="font-urbanist text-base sm:text-lg font-medium text-[#3E3226] group-hover:text-[#8C7355] transition-colors leading-snug">
                 {item.name}
               </h3>
             </div>

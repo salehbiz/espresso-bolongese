@@ -101,10 +101,10 @@ export default function WellnessMenuSection() {
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="text-center mb-12 max-w-[600px] mx-auto">
-          <h2 className="text-[#3D3D3D] mb-4">
+          <h2 className="text-[#3E3226] mb-4">
             Browse our <em className="wood-700-text font-cardo italic">Menus</em>
           </h2>
-          <p className="large-paragraph text-[#6D6D6D] leading-relaxed">
+          <p className="large-paragraph text-[#7A6F64] leading-relaxed">
             Each ritual is thoughtfully designed to restore balance, blending traditional techniques with contemporary luxury.
           </p>
         </div>
@@ -123,8 +123,8 @@ export default function WellnessMenuSection() {
               onClick={() => setActiveTab(tab)}
               className={`px-6 sm:px-8 py-3 text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all cursor-pointer border ${
                 activeTab === tab
-                  ? "bg-[#71553B] text-white border-[#71553B] shadow-sm"
-                  : "bg-[#f8f6ef] text-[#71553B] border-[#e4dcc4] hover:border-[#71553B]"
+                  ? "bg-[#8C7355] text-white border-[#8C7355] shadow-sm"
+                  : "bg-[#FAF7F2] text-[#8C7355] border-[#E5DCCE] hover:border-[#8C7355]"
               }`}
             >
               {tab}
@@ -136,7 +136,7 @@ export default function WellnessMenuSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Menu Items Left Column (7 cols) */}
           <div className="lg:col-span-7">
-            <h3 className="font-cardo text-3xl sm:text-4xl text-[#3D3D3D] mb-8 pb-4 border-b border-[#e4dcc4]">
+            <h3 className="font-cardo text-3xl sm:text-4xl text-[#3E3226] mb-8 pb-4 border-b border-[#E5DCCE]">
               {currentCategory.title}{" "}
               <em className="wood-700-text font-cardo italic">
                 {currentCategory.titleHighlight}
@@ -147,34 +147,34 @@ export default function WellnessMenuSection() {
               {currentCategory.items.map((item, idx) => (
                 <div
                   key={idx}
-                  className="pb-6 border-b border-[#f2efe2] last:border-0 transition-opacity duration-300"
+                  className="pb-6 border-b border-[#F4ECE1] last:border-0 transition-opacity duration-300"
                 >
                   <div className="flex items-baseline justify-between gap-4 mb-2">
-                    <h4 className="font-cardo text-xl sm:text-2xl text-[#3D3D3D] font-normal">
+                    <h4 className="font-cardo text-xl sm:text-2xl text-[#3E3226] font-normal">
                       {item.name}{" "}
-                      <em className="font-cardo italic text-[#71553B]">
+                      <em className="font-cardo italic text-[#8C7355]">
                         {item.duration}
                       </em>
                     </h4>
-                    <span className="font-urbanist text-base sm:text-lg font-semibold text-[#71553B] shrink-0">
+                    <span className="font-urbanist text-base sm:text-lg font-semibold text-[#8C7355] shrink-0">
                       {item.price}
                     </span>
                   </div>
-                  <p className="font-urbanist text-sm sm:text-base text-[#6D6D6D] font-normal">
+                  <p className="font-urbanist text-sm sm:text-base text-[#7A6F64] font-normal">
                     {item.description}
                   </p>
                 </div>
               ))}
             </div>
 
-            <p className="font-urbanist text-xs sm:text-sm text-[#8B6843] italic mt-8">
+            <p className="font-urbanist text-xs sm:text-sm text-[#8C7355] italic mt-8">
               *All treatments are subject to availability and advance booking is recommended.
             </p>
           </div>
 
           {/* Feature Image Right Column (5 cols) */}
           <div className="lg:col-span-5">
-            <div className="img-zoom-container relative h-[380px] sm:h-[460px] lg:h-[500px] w-full overflow-hidden shadow-xs bg-[#f8f6ef] border border-[#e4dcc4]">
+            <div className="img-zoom-container relative h-[380px] sm:h-[460px] lg:h-[500px] w-full overflow-hidden shadow-xs bg-[#FAF7F2] border border-[#E5DCCE]">
               <img
                 key={currentCategory.image}
                 src={currentCategory.image}

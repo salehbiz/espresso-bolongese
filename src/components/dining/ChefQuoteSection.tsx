@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ChefQuoteSection() {
   return (
-    <section className="section py-20 sm:py-28 bg-white border-t border-[#f2efe2]">
+    <section className="section py-20 sm:py-28 bg-white border-t border-[#F4ECE1]">
       <div className="container max-w-[900px] mx-auto px-5 sm:px-8 text-center">
         {/* 5 Stars */}
         <div className="flex justify-center mb-6">
@@ -14,12 +14,12 @@ export default function ChefQuoteSection() {
         </div>
 
         {/* Quote */}
-        <p className="font-cardo text-2xl sm:text-3xl md:text-4xl text-[#3D3D3D] italic leading-relaxed font-normal mb-6">
+        <p className="font-cardo text-2xl sm:text-3xl md:text-4xl text-[#3E3226] italic leading-relaxed font-normal mb-6">
           &ldquo;Each dish carries the essence of our land and culture, blending tradition with innovation to create something truly unforgettable.&rdquo;
         </p>
 
         {/* Attribution */}
-        <div className="font-urbanist text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#71553B]">
+        <div className="font-urbanist text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#8C7355]">
           Chef Aruna – Executive Chef
         </div>
       </div>

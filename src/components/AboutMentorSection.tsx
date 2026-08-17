@@ -15,7 +15,7 @@ export default function AboutMentorSection({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Text Column */}
           <div className="space-y-6 max-w-[580px]">
-            <h2 className="text-[#3D3D3D]">
+            <h2 className="text-[#3E3226]">
               About our{" "}
               <em className="wood-700-text">
                 villas and resort
@@ -23,14 +23,14 @@ export default function AboutMentorSection({
             </h2>
 
             <div className="space-y-4">
-              <p className="large-paragraph text-[#6D6D6D]">
+              <p className="large-paragraph text-[#7A6F64]">
                 Every villa at Asatha has been thoughtfully crafted, blending
                 modern design with timeless character. No two spaces are
                 alike—each reflects its own unique story, with details that
                 honor the spirit of Asatha and the calm beauty of its
                 surroundings.
               </p>
-              <p className="large-paragraph text-[#6D6D6D]">
+              <p className="large-paragraph text-[#7A6F64]">
                 Set on dramatic cliffs overlooking the Indian Ocean, Asatha
                 brings together the artistry of boutique living and the
                 serenity of nature. Here, architecture, landscape, and
@@ -54,7 +54,7 @@ export default function AboutMentorSection({
 
           {/* Right Image Column */}
           <div className="w-full">
-            <div className="img-zoom-container relative w-full h-[380px] sm:h-[480px] lg:h-[540px] overflow-hidden shadow-xs bg-[#e4dcc4]">
+            <div className="img-zoom-container relative w-full h-[380px] sm:h-[480px] lg:h-[540px] overflow-hidden shadow-xs bg-[#E5DCCE]">
               <img
                 src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901b6e63083c65c64e02108_about-mentor.webp"
                 alt="About Asatha Resort and villas"

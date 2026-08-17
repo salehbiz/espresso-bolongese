@@ -20,7 +20,7 @@ export default function ContactUsPage() {
   };
 
   return (
-    <div className="relative min-h-screen bg-white text-[#3D3D3D]">
+    <div className="relative min-h-screen bg-white text-[#3E3226]">
       {/* Availability Booking Pop-up Modal */}
       <AvailabilityModal isOpen={modalOpen} onClose={handleCloseModal} />
 
