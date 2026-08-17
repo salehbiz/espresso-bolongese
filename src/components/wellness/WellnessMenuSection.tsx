@@ -97,7 +97,7 @@ export default function WellnessMenuSection() {
   const currentCategory = menuData[activeTab];
 
   return (
-    <section id="menu" className="section py-24 sm:py-32 bg-white">
+    <section id="menu" className="section py-24 sm:py-32 bg-[#FAF7F2]">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="text-center mb-12 max-w-[600px] mx-auto">

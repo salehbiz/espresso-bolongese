@@ -32,12 +32,12 @@ export default function PackagesSection({ onOpenModal }: PackagesSectionProps) {
   ];
 
   return (
-    <section id="packages" className="section py-28 sm:py-36 bg-wood-50">
+    <section id="packages" className="section py-28 sm:py-36 bg-[#3E3226] text-white">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="text-center mb-16 sm:mb-24">
-          <h2 className="text-[#3E3226]">
-            Popular <em className="wood-700-text">Packages</em>
+          <h2 className="text-white">
+            Popular <em className="text-[#FAF7F2] font-normal italic">Packages</em>
           </h2>
         </div>
 

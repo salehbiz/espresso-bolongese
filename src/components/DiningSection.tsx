@@ -37,12 +37,12 @@ export default function DiningSection() {
     <section
       ref={sectionRef}
       id="dining"
-      className="dine-section relative w-full h-[220vh] bg-[#3E3226]"
+      className="dine-section relative w-full h-[220vh] bg-[#FAF7F2]"
     >
       {/* Sticky Fullscreen Center Card */}
       <div className="dine-wrapper sticky top-0 h-screen w-full flex items-center justify-center pointer-events-none z-20">
         <div className="container max-w-[1440px] mx-auto px-5 sm:px-8 text-center flex flex-col items-center">
-          <div className="dine-heading-div pointer-events-auto max-w-[540px] mx-auto flex flex-col items-center text-center gap-6 sm:gap-8 bg-[#FAF7F2] py-8 px-6 sm:px-10 border border-[#E5DCCE] shadow-xl">
+          <div className="dine-heading-div pointer-events-auto max-w-[540px] mx-auto flex flex-col items-center text-center gap-6 sm:gap-8 bg-white py-8 px-6 sm:px-10 border border-[#E5DCCE] shadow-xl">
             {/* Cloche Icon */}
             <div className="dine-icon text-[#8C7355]">
               <ClocheIcon />
@@ -79,7 +79,7 @@ export default function DiningSection() {
       <div className="dine-image-div absolute inset-0 w-full h-full pointer-events-none overflow-hidden z-10">
         {/* Image 1: Top Left (Juice and fruit) */}
         <div
-          className="absolute left-[3%] md:left-[6%] w-[32vw] md:w-[28vw] max-w-[440px] h-[35vh] md:h-[47vh] overflow-hidden bg-[#FAF7F2]/20 shadow-md transition-transform duration-75 ease-out"
+          className="absolute left-[3%] md:left-[6%] w-[32vw] md:w-[28vw] max-w-[440px] h-[35vh] md:h-[47vh] overflow-hidden bg-[#E5DCCE] shadow-md transition-transform duration-75 ease-out"
           style={{
             top: "14%",
             transform: `translate3d(0, ${scrollProgress * -260}px, 0)`,
@@ -94,7 +94,7 @@ export default function DiningSection() {
 
         {/* Image 2: Top Center Above Heading */}
         <div
-          className="absolute left-1/2 w-[240px] sm:w-[350px] overflow-hidden bg-[#FAF7F2]/20 shadow-md transition-transform duration-75 ease-out hidden sm:block"
+          className="absolute left-1/2 w-[240px] sm:w-[350px] overflow-hidden bg-[#E5DCCE] shadow-md transition-transform duration-75 ease-out hidden sm:block"
           style={{
             top: "5%",
             transform: `translate3d(-50%, ${scrollProgress * -360}px, 0)`,
@@ -109,7 +109,7 @@ export default function DiningSection() {
 
         {/* Image 3: Top Right (Candlelight table) */}
         <div
-          className="absolute right-[3%] md:right-[6%] w-[32vw] md:w-[28vw] max-w-[440px] h-[35vh] md:h-[47vh] overflow-hidden bg-[#FAF7F2]/20 shadow-md transition-transform duration-75 ease-out"
+          className="absolute right-[3%] md:right-[6%] w-[32vw] md:w-[28vw] max-w-[440px] h-[35vh] md:h-[47vh] overflow-hidden bg-[#E5DCCE] shadow-md transition-transform duration-75 ease-out"
           style={{
             top: "12%",
             transform: `translate3d(0, ${scrollProgress * -230}px, 0)`,
@@ -124,7 +124,7 @@ export default function DiningSection() {
 
         {/* Image 4: Middle Right (Sunny terrace lunch) */}
         <div
-          className="absolute right-[4%] md:right-[10%] w-[32vw] md:w-[28vw] max-w-[440px] h-[36vh] md:h-[47vh] overflow-hidden bg-[#FAF7F2]/20 shadow-md transition-transform duration-75 ease-out"
+          className="absolute right-[4%] md:right-[10%] w-[32vw] md:w-[28vw] max-w-[440px] h-[36vh] md:h-[47vh] overflow-hidden bg-[#E5DCCE] shadow-md transition-transform duration-75 ease-out"
           style={{
             top: "46%",
             transform: `translate3d(0, ${scrollProgress * -380}px, 0)`,
@@ -139,7 +139,7 @@ export default function DiningSection() {
 
         {/* Image 5: Middle Left (Floating pool breakfast) */}
         <div
-          className="absolute left-[4%] md:left-[8%] w-[38vw] md:w-[36vw] max-w-[540px] h-[42vh] md:h-[55vh] overflow-hidden bg-[#FAF7F2]/20 shadow-md transition-transform duration-75 ease-out"
+          className="absolute left-[4%] md:left-[8%] w-[38vw] md:w-[36vw] max-w-[540px] h-[42vh] md:h-[55vh] overflow-hidden bg-[#E5DCCE] shadow-md transition-transform duration-75 ease-out"
           style={{
             top: "50%",
             transform: `translate3d(0, ${scrollProgress * -440}px, 0)`,
@@ -154,7 +154,7 @@ export default function DiningSection() {
 
         {/* Image 6: Bottom Left */}
         <div
-          className="absolute left-0 w-[34vw] md:w-[32vw] max-w-[480px] h-[38vh] md:h-[50vh] overflow-hidden bg-[#FAF7F2]/20 shadow-md transition-transform duration-75 ease-out"
+          className="absolute left-0 w-[34vw] md:w-[32vw] max-w-[480px] h-[38vh] md:h-[50vh] overflow-hidden bg-[#E5DCCE] shadow-md transition-transform duration-75 ease-out"
           style={{
             top: "76%",
             transform: `translate3d(0, ${scrollProgress * -560}px, 0)`,
@@ -169,7 +169,7 @@ export default function DiningSection() {
 
         {/* Image 7: Bottom Right */}
         <div
-          className="absolute right-[20px] w-[33vw] md:w-[30vw] max-w-[460px] h-[40vh] md:h-[52vh] overflow-hidden bg-[#FAF7F2]/20 shadow-md transition-transform duration-75 ease-out"
+          className="absolute right-[20px] w-[33vw] md:w-[30vw] max-w-[460px] h-[40vh] md:h-[52vh] overflow-hidden bg-[#E5DCCE] shadow-md transition-transform duration-75 ease-out"
           style={{
             top: "74%",
             transform: `translate3d(0, ${scrollProgress * -510}px, 0)`,

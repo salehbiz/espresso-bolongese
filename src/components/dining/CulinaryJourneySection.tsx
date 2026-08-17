@@ -25,11 +25,11 @@ export default function CulinaryJourneySection() {
   ];
 
   return (
-    <section className="section py-24 sm:py-32 bg-[#FAF7F2]">
+    <section className="section py-24 sm:py-32 bg-[#3E3226] text-white">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         <div className="text-center mb-16 max-w-[500px] mx-auto">
-          <h2 className="text-[#3E3226]">
-            A culinary <em className="wood-700-text font-cardo italic">Journey awaits</em>
+          <h2 className="text-white">
+            A culinary <em className="text-[#FAF7F2] font-normal italic">Journey awaits</em>
           </h2>
         </div>
 

@@ -72,15 +72,15 @@ export default function GuestStoriesSection({
   };
 
   return (
-    <section className="section py-28 sm:py-36 bg-[#3E3226] text-white">
+    <section className="section py-28 sm:py-36 bg-[#FAF7F2] text-[#3E3226]">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <p className="large-paragraph mb-2 text-[#FAF7F2]/85">
+          <p className="large-paragraph mb-2 text-[#7A6F64]">
             200+ happy guests so far
           </p>
-          <h2 className="text-white">
-            Guest <em className="text-[#FAF7F2] font-normal italic">stories</em>
+          <h2 className="text-[#3E3226]">
+            Guest <em className="text-[#8C7355] font-normal italic">stories</em>
           </h2>
         </div>
 
@@ -92,27 +92,27 @@ export default function GuestStoriesSection({
               <img
                 src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901bbcb398b36db73571bc8_guest-story-logo.svg"
                 alt="Story logo"
-                className="h-4 sm:h-5 w-auto brightness-0 invert opacity-90"
+                className="h-4 sm:h-5 w-auto"
               />
-              <div className="w-8 h-px bg-white/40" />
+              <div className="w-8 h-px bg-[#E5DCCE]" />
               <img
                 src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901bbcc9476bdcaad055331_bddc6d983660d93780c71901fcd8217f_guest-story-review-star.svg"
                 alt="5 Stars"
-                className="h-3.5 sm:h-4 w-auto brightness-0 invert opacity-90"
+                className="h-3.5 sm:h-4 w-auto"
               />
             </div>
 
             {/* Testimonial Quote */}
-            <p className="font-heading text-2xl sm:text-3xl md:text-[34px] text-white leading-relaxed font-normal mb-6">
+            <p className="font-heading text-2xl sm:text-3xl md:text-[34px] text-[#3E3226] leading-relaxed font-normal mb-6">
               {stories[currentSlide].quote}
             </p>
 
             {/* Guest Info */}
             <div>
-              <div className="font-body text-base font-semibold text-white mb-1">
+              <div className="font-body text-base font-semibold text-[#3E3226] mb-1">
                 {stories[currentSlide].name}
               </div>
-              <div className="small-paragraph text-[#FAF7F2]/80 uppercase tracking-wider text-xs">
+              <div className="small-paragraph text-[#7A6F64] uppercase tracking-wider text-xs">
                 {stories[currentSlide].details}
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function GuestStoriesSection({
           {/* Left Arrow Button */}
           <button
             onClick={handlePrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 p-2 text-white hover:text-[#FAF7F2] transition-colors cursor-pointer"
+            className="absolute left-0 top-1/2 -translate-y-1/2 p-2 text-[#3E3226] hover:text-[#8C7355] transition-colors cursor-pointer"
             aria-label="Previous story"
           >
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +132,7 @@ export default function GuestStoriesSection({
           {/* Right Arrow Button */}
           <button
             onClick={handleNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 p-2 text-white hover:text-[#FAF7F2] transition-colors cursor-pointer"
+            className="absolute right-0 top-1/2 -translate-y-1/2 p-2 text-[#3E3226] hover:text-[#8C7355] transition-colors cursor-pointer"
             aria-label="Next story"
           >
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +148,7 @@ export default function GuestStoriesSection({
               {col.map((imgSrc, rIdx) => (
                 <div
                   key={rIdx}
-                  className="img-zoom-container relative h-[200px] sm:h-[260px] md:h-[320px] w-full overflow-hidden shadow-xs bg-[#FAF7F2]/20"
+                  className="img-zoom-container relative h-[200px] sm:h-[260px] md:h-[320px] w-full overflow-hidden shadow-xs bg-[#E5DCCE]"
                 >
                   <img
                     src={imgSrc}

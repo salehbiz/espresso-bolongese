@@ -2,13 +2,13 @@ import React from "react";
 
 export default function CulinaryExperiencesSection() {
   return (
-    <section className="section py-24 sm:py-32 bg-[#FAF7F2]">
+    <section className="section py-24 sm:py-32 bg-[#FAF7F2] text-[#3E3226]">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Left */}
           <div className="max-w-[540px] order-2 lg:order-1">
             <h2 className="text-[#3E3226] mb-6">
-              Culinary <em className="wood-700-text font-cardo italic">Experiences</em>
+              Culinary <em className="text-[#8C7355] font-normal italic">Experiences</em>
             </h2>
             <p className="large-paragraph text-[#7A6F64] leading-relaxed mb-8">
               From hands-on cooking journeys with our chefs to intimate cliffside dinners beneath the stars. Each moment is designed to connect you with Bali’s culture, nature, and spirit — a celebration of flavor, place, and memory.

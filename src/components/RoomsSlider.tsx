@@ -70,14 +70,14 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
   };
 
   return (
-    <section id="rooms" className="section py-28 sm:py-36 bg-[#3E3226] text-white overflow-hidden">
+    <section id="rooms" className="section py-28 sm:py-36 bg-[#FAF7F2] text-[#3E3226] overflow-hidden">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="common-heading-div mb-12 sm:mb-16">
-          <h2 className="text-white">
+          <h2 className="text-[#3E3226]">
             Rooms &amp; Suites
           </h2>
-          <p className="large-paragraph text-[#FAF7F2]/90">
+          <p className="large-paragraph text-[#7A6F64]">
             Discover spaces designed for unhurried living.
           </p>
         </div>
@@ -109,7 +109,7 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
                   onClick={onOpenModal}
                 >
                   {/* Sharp Image with Hover Zoom */}
-                  <div className="villa-thumb-image-div img-zoom-container relative h-[280px] sm:h-[360px] md:h-[400px] w-full overflow-hidden mb-6 bg-[#FAF7F2]/20">
+                  <div className="villa-thumb-image-div img-zoom-container relative h-[280px] sm:h-[360px] md:h-[400px] w-full overflow-hidden mb-6 bg-[#E5DCCE]">
                     <img
                       src={villa.image}
                       alt={villa.title}
@@ -120,17 +120,17 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
 
                   {/* Title & Specs */}
                   <div className="villa-slider-detail-div mb-4">
-                    <div className="h6-heading text-white group-hover:text-[#FAF7F2] transition-colors mb-2">
+                    <div className="h6-heading text-[#3E3226] group-hover:text-[#8C7355] transition-colors mb-2">
                       {villa.title}
                     </div>
-                    <p className="small-paragraph villa-paragraph text-[#FAF7F2]/80 max-w-[320px] leading-relaxed">
+                    <p className="small-paragraph villa-paragraph text-[#7A6F64] max-w-[320px] leading-relaxed">
                       {villa.specs}
                     </p>
                   </div>
 
                   {/* View Details Link */}
                   <div>
-                    <span className="font-heading text-base font-semibold text-white border-b border-white pb-0.5 group-hover:text-[#FAF7F2] group-hover:border-[#FAF7F2] transition-colors inline-block">
+                    <span className="font-heading text-base font-semibold text-[#3E3226] border-b border-[#3E3226] pb-0.5 group-hover:text-[#8C7355] group-hover:border-[#8C7355] transition-colors inline-block">
                       View Details
                     </span>
                   </div>
@@ -147,8 +147,8 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
                 onClick={() => setCurrentIndex(i)}
                 className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
                   currentIndex === i
-                    ? "bg-white scale-125"
-                    : "bg-white/40 hover:bg-white/70"
+                    ? "bg-[#3E3226] scale-125"
+                    : "bg-[#D4C5B3] hover:bg-[#8C7355]"
                 }`}
                 aria-label={`Go to slide ${i + 1}`}
               />
