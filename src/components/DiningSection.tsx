@@ -37,7 +37,7 @@ export default function DiningSection() {
     <section
       ref={sectionRef}
       id="dining"
-      className="dine-section relative w-full h-[220vh] bg-[#8C7355]"
+      className="dine-section relative w-full h-[220vh] bg-[#3E3226]"
     >
       {/* Sticky Fullscreen Center Card */}
       <div className="dine-wrapper sticky top-0 h-screen w-full flex items-center justify-center pointer-events-none z-20">

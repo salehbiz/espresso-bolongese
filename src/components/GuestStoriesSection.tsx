@@ -72,7 +72,7 @@ export default function GuestStoriesSection({
   };
 
   return (
-    <section className="section py-28 sm:py-36 bg-[#8C7355] text-white">
+    <section className="section py-28 sm:py-36 bg-[#3E3226] text-white">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">

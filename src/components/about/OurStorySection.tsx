@@ -4,12 +4,12 @@ import React from "react";
 
 export default function OurStorySection() {
   return (
-    <section className="relative bg-[#8C7355] text-white overflow-hidden py-24 sm:py-32 border-t border-[#A48B6D]">
+    <section className="relative bg-[#3E3226] text-white overflow-hidden py-24 sm:py-32 border-t border-[#4E3F32]">
       {/* Background Gradient & Image for Desktop Large Screens */}
       <div
-        className="absolute inset-0 hidden lg:block bg-no-repeat bg-right bg-cover opacity-30"
+        className="absolute inset-0 hidden lg:block bg-no-repeat bg-right bg-cover opacity-25"
         style={{
-          backgroundImage: `linear-gradient(106deg, #8C7355 40%, rgba(140, 115, 85, 0.95) 48%, rgba(140, 115, 85, 0) 65%), url("https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/69021780d95d14f02682f330_our-story-background.webp")`,
+          backgroundImage: `linear-gradient(106deg, #3E3226 40%, rgba(62, 50, 38, 0.95) 48%, rgba(62, 50, 38, 0) 65%), url("https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/69021780d95d14f02682f330_our-story-background.webp")`,
           backgroundPosition: "0 0, 50% 0",
         }}
       />

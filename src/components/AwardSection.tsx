@@ -14,7 +14,7 @@ export default function AwardSection({ variant = "toasted" }: AwardSectionProps)
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#8C7355] text-white border-t border-[#A48B6D]">
+    <section className="py-20 sm:py-28 bg-[#3E3226] text-white border-t border-[#4E3F32]">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 text-center lg:text-left">
           {/* Left Text */}

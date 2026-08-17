@@ -13,7 +13,7 @@ export default function WellnessPhilosophySection() {
   ];
 
   return (
-    <section className="section py-24 sm:py-32 bg-[#8C7355] text-white overflow-hidden">
+    <section className="section py-24 sm:py-32 bg-[#3E3226] text-white overflow-hidden">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8 mb-16">
         <div className="text-center max-w-[620px] mx-auto">
           <h2 className="text-white mb-4">

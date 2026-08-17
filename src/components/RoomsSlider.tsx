@@ -70,7 +70,7 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
   };
 
   return (
-    <section id="rooms" className="section py-28 sm:py-36 bg-[#8C7355] text-white overflow-hidden">
+    <section id="rooms" className="section py-28 sm:py-36 bg-[#3E3226] text-white overflow-hidden">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="common-heading-div mb-12 sm:mb-16">

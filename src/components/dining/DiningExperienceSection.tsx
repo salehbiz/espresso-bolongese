@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DiningExperienceSection() {
   return (
-    <section className="section py-24 sm:py-32 bg-[#8C7355] text-white">
+    <section className="section py-24 sm:py-32 bg-[#3E3226] text-white">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image Left */}

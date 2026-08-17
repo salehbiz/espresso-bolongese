@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ChefQuoteSection() {
   return (
-    <section className="section py-20 sm:py-28 bg-[#8C7355] text-white">
+    <section className="section py-20 sm:py-28 bg-[#3E3226] text-white">
       <div className="container max-w-[900px] mx-auto px-5 sm:px-8 text-center">
         {/* 5 Stars */}
         <div className="flex justify-center mb-6">
