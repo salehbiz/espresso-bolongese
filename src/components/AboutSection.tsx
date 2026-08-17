@@ -45,8 +45,8 @@ export default function AboutSection() {
           {/* Row 1, Image 1 (Spans 3 Columns = 50%) */}
           <div className="md:col-span-3 img-zoom-container h-[300px] sm:h-[380px] lg:h-[400px] w-full bg-[#e4dcc4]">
             <img
-              src="/images/Luxury_coffee_product_photoshoot_202608170611.jpeg"
-              alt="Luxury coffee product photoshoot"
+              src="/images/Strawberry_iced_latte_in_glass_202608170621.jpeg"
+              alt="Strawberry iced latte in glass"
               className="w-full h-full object-cover"
             />
           </div>
@@ -54,8 +54,8 @@ export default function AboutSection() {
           {/* Row 1, Image 2 (Spans 3 Columns = 50%) */}
           <div className="md:col-span-3 img-zoom-container h-[300px] sm:h-[380px] lg:h-[400px] w-full bg-[#e4dcc4]">
             <img
-              src="/images/Iced_strawberry_matcha_in_glass_202608170611.jpeg"
-              alt="Iced strawberry matcha in glass"
+              src="/images/Iced_brown_sugar_oat_latte_202608170620.jpeg"
+              alt="Iced brown sugar oat latte"
               className="w-full h-full object-cover"
             />
           </div>
@@ -63,8 +63,8 @@ export default function AboutSection() {
           {/* Row 2, Image 3 (Spans 2 Columns = 33.333%) */}
           <div className="md:col-span-2 img-zoom-container h-[260px] sm:h-[340px] lg:h-[400px] w-full bg-[#e4dcc4]">
             <img
-              src="/images/Photographs_of_iced_blended_coffee_202608170610.jpeg"
-              alt="Photographs of iced blended coffee"
+              src="/images/Iced_vanilla_latte_on_table_202608170624.jpeg"
+              alt="Iced vanilla latte on table"
               className="w-full h-full object-cover"
             />
           </div>
