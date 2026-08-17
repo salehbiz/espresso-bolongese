@@ -45,8 +45,8 @@ export default function AboutSection() {
           {/* Row 1, Image 1 (Spans 3 Columns = 50%) */}
           <div className="md:col-span-3 img-zoom-container h-[300px] sm:h-[380px] lg:h-[400px] w-full bg-[#e4dcc4]">
             <img
-              src="/images/Photograph_luxury_coffee_drinks_202608170555.jpeg"
-              alt="Luxury coffee drinks"
+              src="/images/Luxury_coffee_product_photoshoot_202608170611.jpeg"
+              alt="Luxury coffee product photoshoot"
               className="w-full h-full object-cover"
             />
           </div>
@@ -54,17 +54,17 @@ export default function AboutSection() {
           {/* Row 1, Image 2 (Spans 3 Columns = 50%) */}
           <div className="md:col-span-3 img-zoom-container h-[300px] sm:h-[380px] lg:h-[400px] w-full bg-[#e4dcc4]">
             <img
-              src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/690088bed5355dda34e35de4_home-about-image2.webp"
-              alt="Resort evening patio lounge"
-              className="w-full h-full object-cover object-bottom"
+              src="/images/Iced_strawberry_matcha_in_glass_202608170611.jpeg"
+              alt="Iced strawberry matcha in glass"
+              className="w-full h-full object-cover"
             />
           </div>
 
           {/* Row 2, Image 3 (Spans 2 Columns = 33.333%) */}
           <div className="md:col-span-2 img-zoom-container h-[260px] sm:h-[340px] lg:h-[400px] w-full bg-[#e4dcc4]">
             <img
-              src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/690088be458ff5d001975320_home-about-image3.webp"
-              alt="Beach umbrellas and ocean view"
+              src="/images/Photographs_of_iced_blended_coffee_202608170610.jpeg"
+              alt="Photographs of iced blended coffee"
               className="w-full h-full object-cover"
             />
           </div>
@@ -72,8 +72,8 @@ export default function AboutSection() {
           {/* Row 2, Image 4 (Spans 2 Columns = 33.333%) */}
           <div className="md:col-span-2 img-zoom-container h-[260px] sm:h-[340px] lg:h-[400px] w-full bg-[#e4dcc4]">
             <img
-              src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/690088be388271ca4925ad72_home-about-image4.webp"
-              alt="Resort tropical architecture"
+              src="/images/Iced_vanilla_latte_on_table_202608170610.jpeg"
+              alt="Iced vanilla latte on table"
               className="w-full h-full object-cover"
             />
           </div>
@@ -81,8 +81,8 @@ export default function AboutSection() {
           {/* Row 2, Image 5 (Spans 2 Columns = 33.333%) */}
           <div className="md:col-span-2 img-zoom-container h-[260px] sm:h-[340px] lg:h-[400px] w-full bg-[#e4dcc4]">
             <img
-              src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/690088bfdd72485041516c8e_home-about-image5.webp"
-              alt="Infinity pool view"
+              src="/images/Iced_coconut_matcha_latte_202608170610.jpeg"
+              alt="Iced coconut matcha latte"
               className="w-full h-full object-cover"
             />
           </div>
