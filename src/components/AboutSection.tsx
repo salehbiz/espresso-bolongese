@@ -5,7 +5,7 @@ import { WaveDivider } from "./Icons";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="section background-wood-50 padding-bottom pt-28 sm:pt-32 pb-0 bg-wood-50">
+    <section id="about" className="section pt-28 sm:pt-32 pb-0 bg-[#FAF7F2]">
       {/* Top Container with Header & Copy */}
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8 mb-16 sm:mb-20 text-center">
         <div className="flex flex-col items-center justify-start gap-8 max-w-[700px] mx-auto">
@@ -18,19 +18,19 @@ export default function AboutSection() {
           <div className="home-about-heading-div max-w-[400px] mx-auto">
             <h2 className="text-[#3E3226]">
               Timeless luxury, <br className="hidden sm:inline" />
-              <em className="wood-700-text">crafted for you</em>
+              <em className="text-[#8C7355]">crafted for you</em>
             </h2>
           </div>
 
           {/* 2 Paragraphs */}
           <div className="space-y-4 max-w-[560px] mx-auto">
-            <p className="large-paragraph home-about-paragraph">
+            <p className="large-paragraph home-about-paragraph text-[#7A6F64]">
               Asatha was created with one vision: to redefine the art of luxury
               hospitality. Rooted in warmth and inspired by nature, we offer not
               just a destination, but a sanctuary where every moment is designed
               to be unforgettable.
             </p>
-            <p className="large-paragraph home-about-paragraph">
+            <p className="large-paragraph home-about-paragraph text-[#7A6F64]">
               From serene suites to curated experiences, Asatha is more than a
               resort—it’s a retreat for the soul. Here, every detail is
               thoughtfully designed to celebrate the art of living beautifully.

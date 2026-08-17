@@ -23,7 +23,7 @@ export default function WellnessExperiencesSection() {
   ];
 
   return (
-    <section className="section py-24 sm:py-32 bg-white">
+    <section className="section py-24 sm:py-32 bg-[#FAF7F2]">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         <div className="text-center mb-16 max-w-[500px] mx-auto">
           <h2 className="text-[#3E3226]">

@@ -10,14 +10,14 @@ export default function AboutMentorSection({
   onOpenModal,
 }: AboutMentorSectionProps) {
   return (
-    <section className="py-24 sm:py-36 bg-wood-50">
+    <section className="py-24 sm:py-36 bg-[#FAF7F2] text-[#3E3226]">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Text Column */}
           <div className="space-y-6 max-w-[580px]">
             <h2 className="text-[#3E3226]">
               About our{" "}
-              <em className="wood-700-text">
+              <em className="text-[#8C7355] font-normal italic">
                 villas and resort
               </em>
             </h2>

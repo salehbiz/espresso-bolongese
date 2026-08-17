@@ -61,7 +61,7 @@ export default function AmenitiesSection({ onOpenModal }: AmenitiesSectionProps)
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-white border-t border-[#F4ECE1]">
+    <section className="py-24 sm:py-32 bg-[#FAF7F2] border-t border-[#E5DCCE]">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Top Header Row */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 sm:gap-12 mb-16 sm:mb-20">

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 
 interface RoomsSliderProps {
   onOpenModal: () => void;
@@ -8,11 +8,8 @@ interface RoomsSliderProps {
 
 export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
   const isDragging = useRef(false);
   const startX = useRef(0);
-  const currentTranslate = useRef(0);
-  const prevTranslate = useRef(0);
 
   const villas = [
     {
@@ -73,20 +70,20 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
   };
 
   return (
-    <section id="rooms" className="section py-28 sm:py-36 bg-white overflow-hidden">
+    <section id="rooms" className="section py-28 sm:py-36 bg-[#8C7355] text-white overflow-hidden">
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="common-heading-div mb-12 sm:mb-16">
-          <h2 className="text-[#3E3226]">
+          <h2 className="text-white">
             Rooms &amp; Suites
           </h2>
-          <p className="large-paragraph text-[#7A6F64]">
+          <p className="large-paragraph text-[#FAF7F2]/90">
             Discover spaces designed for unhurried living.
           </p>
         </div>
       </div>
 
-      {/* Villa Slider Wrapper - Fully Hidden Scrollbars, Drag-Enabled */}
+      {/* Villa Slider Wrapper */}
       <div className="villa-wrapper w-full overflow-hidden">
         <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
           <div
@@ -112,7 +109,7 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
                   onClick={onOpenModal}
                 >
                   {/* Sharp Image with Hover Zoom */}
-                  <div className="villa-thumb-image-div img-zoom-container relative h-[280px] sm:h-[360px] md:h-[400px] w-full overflow-hidden mb-6 bg-[#F4ECE1]">
+                  <div className="villa-thumb-image-div img-zoom-container relative h-[280px] sm:h-[360px] md:h-[400px] w-full overflow-hidden mb-6 bg-[#FAF7F2]/20">
                     <img
                       src={villa.image}
                       alt={villa.title}
@@ -123,17 +120,17 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
 
                   {/* Title & Specs */}
                   <div className="villa-slider-detail-div mb-4">
-                    <div className="h6-heading text-[#3E3226] group-hover:text-[#8C7355] transition-colors mb-2">
+                    <div className="h6-heading text-white group-hover:text-[#FAF7F2] transition-colors mb-2">
                       {villa.title}
                     </div>
-                    <p className="small-paragraph villa-paragraph text-[#7A6F64] max-w-[320px] leading-relaxed">
+                    <p className="small-paragraph villa-paragraph text-[#FAF7F2]/80 max-w-[320px] leading-relaxed">
                       {villa.specs}
                     </p>
                   </div>
 
                   {/* View Details Link */}
                   <div>
-                    <span className="text-underline-link">
+                    <span className="font-heading text-base font-semibold text-white border-b border-white pb-0.5 group-hover:text-[#FAF7F2] group-hover:border-[#FAF7F2] transition-colors inline-block">
                       View Details
                     </span>
                   </div>
@@ -142,7 +139,7 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
             </div>
           </div>
 
-          {/* Webflow Authentic Slider Nav Dots */}
+          {/* Slider Nav Dots */}
           <div className="villa-slide-nav flex justify-center items-center gap-2 mt-12">
             {villas.map((_, i) => (
               <button
@@ -150,8 +147,8 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
                 onClick={() => setCurrentIndex(i)}
                 className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
                   currentIndex === i
-                    ? "bg-[#3E3226] scale-125"
-                    : "bg-[#D4C5B3] hover:bg-[#8C7355]"
+                    ? "bg-white scale-125"
+                    : "bg-white/40 hover:bg-white/70"
                 }`}
                 aria-label={`Go to slide ${i + 1}`}
               />
