@@ -14,25 +14,25 @@ export default function GuestStoriesSection({
   const stories = [
     {
       quote:
-        "“Every corner of Asatha felt intentional - beautiful yet effortless. Three nights here reminded me how to slow down and breathe again.”",
+        "“Every corner of Espresso Bolognese felt intentional - beautiful yet effortless. Three nights here reminded me how to slow down and breathe again.”",
       name: "Daniel Roberts",
       details: "FROM UK · Stayed in Ocean Suite",
     },
     {
       quote:
-        "“The quiet wasn’t silence, it was music. Waking up to soft light and sleeping under stars made this trip unforgettable.”",
+        "“The quiet wasn’t silence, it was music. Waking up to soft light and freshly roasted espresso made this trip unforgettable.”",
       name: "Amara Patel",
       details: "FROM India · Stayed in Garden Villa",
     },
     {
       quote:
-        "“I’ve traveled often, but never felt this cared for. The staff remembered my name, my tea, even my favorite view.”",
+        "“I’ve traveled often, but never felt this cared for. The staff remembered my name, my coffee, even my favorite view.”",
       name: "Luca Moretti",
       details: "FROM Italy · Stayed in Horizon Pavilion",
     },
     {
       quote:
-        "“Asatha felt like a pause from life, but one that gave me more energy than before. I left lighter, calmer, and deeply inspired.”",
+        "“Espresso Bolognese felt like a pause from life, but one that gave me more energy than before. I left lighter, calmer, and deeply inspired.”",
       name: "Sofia Klein",
       details: "FROM Germany · Stayed in Serenity Suite",
     },
@@ -46,20 +46,20 @@ export default function GuestStoriesSection({
 
   const galleryCols = [
     [
-      "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901c55554b5842152e65014_80f5858d285154d5a3f53084ae1536c0_guest-story-image1.webp",
-      "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901c55205d746a1d3c986a4_ee0b0e985f77b0debd92134b5ab0e910_guest-story-image2.webp",
+      "/images/stories/story-1.jpg",
+      "/images/stories/story-2.jpg",
     ],
     [
-      "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901c55365a5a447eeb5cbad_e7caa392d382f117dfad834e34d1239b_guest-story-image3.webp",
-      "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901c5525a100979f2599f31_fcc92a8bdc2452203c1206ec1d5380ee_guest-story-image4.webp",
+      "/images/stories/story-3.jpg",
+      "/images/stories/story-4.jpg",
     ],
     [
-      "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901c553514bd34179ff1a3e_4ac4d4bd056b46c93174d336a8c1a30c_guest-story-image5.webp",
-      "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901c55447add9be75a51bab_cdccd167c8047e2dfe68e11a93f438bd_guest-story-image6.webp",
+      "/images/stories/story-5.jpg",
+      "/images/stories/story-6.jpg",
     ],
     [
-      "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901c555715e237f377455da_321da12a9b629753635fae9a11bd1ae8_guest-story-image7.webp",
-      "https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901c552e203141de59e44b1_06b2c2aa459b600f5a077fe7c6ee544f_guest-story-image8.webp",
+      "/images/stories/story-7.jpg",
+      "/images/stories/story-8.jpg",
     ],
   ];
 
@@ -90,9 +90,9 @@ export default function GuestStoriesSection({
             {/* Top Stars & Brand Logo */}
             <div className="flex items-center justify-center gap-4 mb-6">
               <img
-                src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/6901bbcb398b36db73571bc8_guest-story-logo.svg"
-                alt="Story logo"
-                className="h-4 sm:h-5 w-auto"
+                src="/images/logo.svg"
+                alt="Brand logo"
+                className="h-6 w-auto"
               />
               <div className="w-8 h-px bg-[#E5DCCE]" />
               <img
