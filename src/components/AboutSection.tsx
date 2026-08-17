@@ -45,8 +45,8 @@ export default function AboutSection() {
           {/* Row 1, Image 1 (Spans 3 Columns = 50%) */}
           <div className="md:col-span-3 img-zoom-container h-[300px] sm:h-[380px] lg:h-[400px] w-full bg-[#e4dcc4]">
             <img
-              src="https://cdn.prod.website-files.com/68f0d3dd9d3c1fec17146b9f/690088c0717b22bee39e5ed1_home-about-image1.webp"
-              alt="Resort pool loungers"
+              src="/images/Photograph_luxury_coffee_drinks_202608170555.jpeg"
+              alt="Luxury coffee drinks"
               className="w-full h-full object-cover"
             />
           </div>
