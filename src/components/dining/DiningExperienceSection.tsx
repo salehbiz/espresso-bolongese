@@ -19,7 +19,7 @@ export default function DiningExperienceSection() {
             <h2 className="text-[#3E3226] mb-6">
               An experience <em className="text-[#8C7355] font-normal italic">beyond taste</em>
             </h2>
-            <p className="large-paragraph text-[#7A6F64] leading-relaxed mb-8">
+            <p className="large-paragraph text-[#3E3226] leading-relaxed mb-8">
               Surrounded by lush gardens and ocean horizons, each dining space offers a setting that inspires connection and calm. From sunrise breakfasts to moonlit dinners, every moment is designed to linger.
             </p>
             <div>

@@ -76,7 +76,7 @@ export default function ContactFaqSection() {
                 </button>
 
                 {isOpen && (
-                  <div className="pt-2 pb-4 font-urbanist text-sm sm:text-base text-[#7A6F64] leading-relaxed">
+                  <div className="pt-2 pb-4 font-urbanist text-sm sm:text-base text-[#3E3226] leading-relaxed">
                     {faq.a}
                   </div>
                 )}

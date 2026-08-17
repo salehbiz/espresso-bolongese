@@ -76,10 +76,10 @@ export default function GuestStoriesSection({
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <p className="large-paragraph mb-2 text-[#7A6F64]">
+          <p className="large-paragraph mb-2 text-[#3E3226] font-semibold">
             200+ happy guests so far
           </p>
-          <h2 className="text-[#3E3226]">
+          <h2 className="text-[#3E3226] font-bold">
             Guest <em className="text-[#8C7355] font-normal italic">stories</em>
           </h2>
         </div>
@@ -103,16 +103,16 @@ export default function GuestStoriesSection({
             </div>
 
             {/* Testimonial Quote */}
-            <p className="font-heading text-2xl sm:text-3xl md:text-[34px] text-[#3E3226] leading-relaxed font-normal mb-6">
+            <p className="font-heading text-2xl sm:text-3xl md:text-[34px] text-[#3E3226] leading-relaxed font-semibold mb-6">
               {stories[currentSlide].quote}
             </p>
 
             {/* Guest Info */}
             <div>
-              <div className="font-body text-base font-semibold text-[#3E3226] mb-1">
+              <div className="font-body text-base font-bold text-[#3E3226] mb-1">
                 {stories[currentSlide].name}
               </div>
-              <div className="small-paragraph text-[#7A6F64] uppercase tracking-wider text-xs">
+              <div className="small-paragraph text-[#4E3F32] font-semibold uppercase tracking-wider text-xs">
                 {stories[currentSlide].details}
               </div>
             </div>

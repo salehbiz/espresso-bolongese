@@ -104,7 +104,7 @@ export default function WellnessMenuSection() {
           <h2 className="text-[#3E3226] mb-4">
             Browse our <em className="wood-700-text font-cardo italic">Menus</em>
           </h2>
-          <p className="large-paragraph text-[#7A6F64] leading-relaxed">
+          <p className="large-paragraph text-[#3E3226] leading-relaxed">
             Each ritual is thoughtfully designed to restore balance, blending traditional techniques with contemporary luxury.
           </p>
         </div>
@@ -160,7 +160,7 @@ export default function WellnessMenuSection() {
                       {item.price}
                     </span>
                   </div>
-                  <p className="font-urbanist text-sm sm:text-base text-[#7A6F64] font-normal">
+                  <p className="font-urbanist text-sm sm:text-base text-[#3E3226] font-normal">
                     {item.description}
                   </p>
                 </div>

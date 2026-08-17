@@ -32,10 +32,10 @@ export default function RewardsSection() {
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="max-w-[650px] mx-auto text-center mb-16 sm:mb-20">
-          <h2 className="text-white mb-4">
+          <h2 className="text-white mb-4 font-bold">
             Asatha <em className="text-[#FAF7F2] font-normal italic">Rewards</em>
           </h2>
-          <p className="large-paragraph reward-paragraph text-center text-[#FAF7F2]/90">
+          <p className="large-paragraph reward-paragraph text-center text-[#FAF7F2]">
             A world of privileges, crafted to make every stay—and every day—more rewarding.
           </p>
         </div>
@@ -55,10 +55,10 @@ export default function RewardsSection() {
 
               {/* Title & Description */}
               <div>
-                <div className="h6-heading text-white mb-3">
+                <div className="h6-heading text-white font-bold mb-3">
                   {item.title}
                 </div>
-                <p className="paragraph text-[#FAF7F2]/85 leading-relaxed">
+                <p className="paragraph text-[#FAF7F2] leading-relaxed">
                   {item.description}
                 </p>
               </div>

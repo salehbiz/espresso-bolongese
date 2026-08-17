@@ -57,7 +57,7 @@ export default function AvailabilityModal({
           <h5 className="text-[#3E3226] text-3xl font-normal mb-1">
             Check <em className="wood-700-text">Availability</em>
           </h5>
-          <p className="large-paragraph text-sm text-[#7A6F64]">
+          <p className="large-paragraph text-sm text-[#3E3226]">
             You’ll receive a confirmation within 24h.
           </p>
           <div className="w-full h-px bg-[#E5DCCE] mt-5" />
@@ -68,7 +68,7 @@ export default function AvailabilityModal({
             <h4 className="text-[#8C7355] text-2xl mb-2">
               Thank You!
             </h4>
-            <p className="paragraph text-[#7A6F64]">
+            <p className="paragraph text-[#3E3226]">
               Your inquiry has been received! Our concierge will contact you within 24 hours.
             </p>
           </div>
@@ -232,7 +232,7 @@ export default function AvailabilityModal({
         <div className="mt-8 pt-6 border-t border-[#E5DCCE]">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px bg-[#E5DCCE] flex-1" />
-            <span className="text-xs text-[#7A6F64] uppercase tracking-wider font-semibold">
+            <span className="text-xs text-[#3E3226] uppercase tracking-wider font-semibold">
               Or booking with partners
             </span>
             <div className="h-px bg-[#E5DCCE] flex-1" />

@@ -119,7 +119,7 @@ export default function DiningMenuSection() {
           <h2 className="text-[#3E3226] mb-4">
             Browse our <em className="wood-700-text font-cardo italic">Menus</em>
           </h2>
-          <p className="large-paragraph text-[#7A6F64] leading-relaxed">
+          <p className="large-paragraph text-[#3E3226] leading-relaxed">
             Discover a selection of our finest culinary offerings, carefully crafted to delight every palate.
           </p>
         </div>
@@ -168,7 +168,7 @@ export default function DiningMenuSection() {
                       {item.price}
                     </span>
                   </div>
-                  <p className="font-urbanist text-sm sm:text-base text-[#7A6F64] font-normal">
+                  <p className="font-urbanist text-sm sm:text-base text-[#3E3226] font-normal">
                     {item.description}
                   </p>
                 </div>

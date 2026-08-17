@@ -36,7 +36,7 @@ export default function PackagesSection({ onOpenModal }: PackagesSectionProps) {
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="text-center mb-16 sm:mb-24">
-          <h2 className="text-white">
+          <h2 className="text-white font-bold">
             Popular <em className="text-[#FAF7F2] font-normal italic">Packages</em>
           </h2>
         </div>
@@ -52,7 +52,7 @@ export default function PackagesSection({ onOpenModal }: PackagesSectionProps) {
             >
               {/* Text Card with White Background */}
               <div
-                className={`bg-white p-8 sm:p-12 lg:p-16 flex flex-col justify-between shadow-xs ${
+                className={`bg-white p-8 sm:p-12 lg:p-16 flex flex-col justify-between shadow-lg text-[#3E3226] ${
                   pkg.reverse ? "lg:col-start-2" : ""
                 }`}
               >
@@ -66,19 +66,19 @@ export default function PackagesSection({ onOpenModal }: PackagesSectionProps) {
                     />
                     <SlashDivider />
                     <div className="flex items-baseline gap-1 text-sm text-[#3E3226]">
-                      <span className="text-[#7A6F64]">from </span>
-                      <strong className="font-semibold text-[#3E3226] text-base">
+                      <span className="text-[#4E3F32] font-medium">from </span>
+                      <strong className="font-bold text-[#3E3226] text-base">
                         {pkg.price}
                       </strong>
-                      <span className="text-[#7A6F64]">/night</span>
+                      <span className="text-[#4E3F32] font-medium">/night</span>
                     </div>
                   </div>
 
-                  <h2 className="text-[#3E3226] text-3xl sm:text-4xl md:text-[44px] mb-5 font-normal">
+                  <h2 className="text-[#3E3226] text-3xl sm:text-4xl md:text-[44px] mb-5 font-bold">
                     {pkg.title}
                   </h2>
 
-                  <p className="large-paragraph package-paragraph mb-8 text-[#7A6F64]">
+                  <p className="large-paragraph package-paragraph mb-8 text-[#3E3226] leading-relaxed">
                     {pkg.description}
                   </p>
                 </div>

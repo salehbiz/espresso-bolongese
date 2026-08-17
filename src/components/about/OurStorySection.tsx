@@ -23,7 +23,7 @@ export default function OurStorySection() {
               <h2 className="text-4xl sm:text-5xl md:text-6xl text-[#3E3226]">
                 Our <em className="text-[#8C7355] font-normal italic">Story</em>
               </h2>
-              <p className="large-paragraph text-[#7A6F64] leading-relaxed">
+              <p className="large-paragraph text-[#3E3226] leading-relaxed">
                 We envisioned more than a resort. We created a haven where
                 nature’s raw beauty and modern comfort exist in effortless
                 harmony. Every villa, every pathway, every view is crafted to
@@ -45,7 +45,7 @@ export default function OurStorySection() {
                   alt="James Thompson"
                   className="w-11 h-11 rounded-full object-cover border border-[#D4C5B3]"
                 />
-                <div className="text-xs sm:text-sm text-[#7A6F64] font-medium leading-tight">
+                <div className="text-xs sm:text-sm text-[#3E3226] font-medium leading-tight">
                   <div className="font-semibold text-[#3E3226]">James Thompson</div>
                   <div>Founder · From London, UK · @ASATHA</div>
                 </div>

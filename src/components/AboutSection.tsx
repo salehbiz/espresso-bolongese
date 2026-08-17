@@ -24,13 +24,13 @@ export default function AboutSection() {
 
           {/* 2 Paragraphs */}
           <div className="space-y-4 max-w-[560px] mx-auto">
-            <p className="large-paragraph home-about-paragraph text-[#7A6F64]">
+            <p className="large-paragraph home-about-paragraph text-[#3E3226]">
               Asatha was created with one vision: to redefine the art of luxury
               hospitality. Rooted in warmth and inspired by nature, we offer not
               just a destination, but a sanctuary where every moment is designed
               to be unforgettable.
             </p>
-            <p className="large-paragraph home-about-paragraph text-[#7A6F64]">
+            <p className="large-paragraph home-about-paragraph text-[#3E3226]">
               From serene suites to curated experiences, Asatha is more than a
               resort—it’s a retreat for the soul. Here, every detail is
               thoughtfully designed to celebrate the art of living beautifully.

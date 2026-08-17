@@ -10,7 +10,7 @@
   --brand-cream-soft: #F4ECE1;    /* Soft secondary cream */
   --brand-border: #E5DCCE;        /* Subtle toasted cream border */
   --brand-border-dark: #D4C5B3;   /* Toasted accent border */
-  --brand-muted: #7A6F64;         /* Toasted warm gray-brown for body text */
+  --brand-muted: #4E3F32;         /* High-contrast dark toasted brown for body copy */
   --brand-white: #FFFFFF;         /* Crisp white for cards/text on brown */
   --accent-green: #2E7D46;        /* Subtle accent green */
   --accent-red: #C93A35;          /* Accent red for primary CTAs */
@@ -19,15 +19,15 @@
   --font-heading: var(--font-heading), "Barlow Semi Condensed", -apple-system, sans-serif;
   --font-body: var(--font-body), "Barlow", -apple-system, sans-serif;
 
-  /* Legacy color mappings mapped to espresso & cream theme */
+  /* Legacy color mappings */
   --wood-50: var(--brand-cream);
   --wood-100: var(--brand-cream-soft);
   --wood-200: var(--brand-border);
   --wood-700: var(--brand-brown);
   --wood-800: var(--brand-dark);
-  --wood-870: rgba(62, 50, 38, 0.8);
+  --wood-870: rgba(62, 50, 38, 0.9);
   --gray-900: var(--brand-dark);
-  --gray-500: var(--brand-muted);
+  --gray-500: #4E3F32;
 }
 
 @theme {
@@ -51,9 +51,9 @@
   --color-wood-600: #8C7355;
   --color-wood-700: #8C7355;
   --color-wood-800: #3E3226;
-  --color-wood-870: #3E3226cc;
+  --color-wood-870: #3E3226;
   --color-dark-900: #3E3226;
-  --color-gray-500: #7A6F64;
+  --color-gray-500: #4E3F32;
 
   --radius-sm: 4px;
   --radius-md: 6px;
@@ -82,7 +82,7 @@
     font-family: var(--font-heading);
     letter-spacing: -0.01em;
     font-weight: 600;
-    color: var(--brand-dark);
+    color: inherit;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -151,7 +151,7 @@
 }
 
 .wood-870-text {
-  color: rgba(62, 50, 38, 0.8) !important;
+  color: var(--brand-dark) !important;
 }
 
 .white-text {
@@ -170,10 +170,9 @@
   background-color: var(--brand-border) !important;
 }
 
-/* Paragraph styles */
+/* High-Contrast Paragraph styles inheriting properly */
 .large-paragraph {
   font-family: var(--font-body);
-  color: var(--brand-muted);
   font-size: 18px;
   line-height: 1.6;
   font-weight: 400;
@@ -188,7 +187,6 @@
 
 .paragraph {
   font-family: var(--font-body);
-  color: var(--brand-muted);
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
@@ -197,7 +195,6 @@
 
 .small-paragraph {
   font-family: var(--font-body);
-  color: var(--brand-muted);
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
@@ -256,7 +253,7 @@
 .webflow-button.btn-white {
   background-color: transparent;
   color: var(--brand-white);
-  border: 1px solid var(--brand-white);
+  border: 1.5px solid var(--brand-white);
 }
 
 .webflow-button.btn-white:hover {
@@ -341,17 +338,16 @@
   font-family: var(--font-heading);
   font-size: 16px;
   font-weight: 600;
-  color: var(--brand-dark);
+  color: inherit;
   text-decoration: none;
-  border-bottom: 1.5px solid var(--brand-dark);
+  border-bottom: 1.5px solid currentColor;
   padding-bottom: 2px;
   transition: color 0.3s ease, border-color 0.3s ease;
   display: inline-block;
 }
 
 .text-underline-link:hover {
-  color: var(--brand-brown);
-  border-color: var(--brand-brown);
+  opacity: 0.8;
 }
 
 /* Accent corner brackets mirroring the logo style */

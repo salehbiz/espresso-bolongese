@@ -11,7 +11,7 @@ export default function ContactHeroSection() {
             <h1 className="font-cardo text-5xl sm:text-6xl md:text-7xl text-[#3E3226] font-normal mb-4 tracking-tight">
               Reach <em className="wood-700-text font-cardo italic">out us</em>
             </h1>
-            <p className="font-urbanist text-base sm:text-lg text-[#7A6F64] max-w-[480px] font-normal leading-relaxed">
+            <p className="font-urbanist text-base sm:text-lg text-[#3E3226] max-w-[480px] font-normal leading-relaxed">
               Your dream retreat at Asatha is just a conversation away.
             </p>
           </div>

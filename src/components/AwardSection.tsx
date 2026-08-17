@@ -24,7 +24,7 @@ export default function AwardSection({ variant = "cream" }: AwardSectionProps) {
             <h2 className={`${isDark ? "text-white" : "text-[#3E3226]"} text-3xl sm:text-4xl md:text-[46px] mb-3`}>
               An Award-winning escape
             </h2>
-            <p className={`large-paragraph award-paragraph ${isDark ? "text-[#FAF7F2]/90" : "text-[#7A6F64]"}`}>
+            <p className={`large-paragraph award-paragraph ${isDark ? "text-[#FAF7F2]/90" : "text-[#3E3226]"}`}>
               Wake up to endless ocean horizons and sunsets painted just for you,
               from the comfort of your private Uluwatu villa.
             </p>

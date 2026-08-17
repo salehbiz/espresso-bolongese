@@ -60,8 +60,8 @@ export default function AboutUsPage() {
         {/* 4. Curated 5 circular amenities showcase */}
         <AmenitiesSection onOpenModal={handleOpenModal} />
 
-        {/* 5. Award-winning escape accreditations (wood-50 background) */}
-        <AwardSection variant="wood-50" />
+        {/* 5. Award-winning escape accreditations (cream background) */}
+        <AwardSection variant="cream" />
 
         {/* 6. Guest Stories & 8-photo lifestyle gallery */}
         <GuestStoriesSection />

@@ -74,10 +74,10 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
       <div className="container max-w-[1440px] mx-auto px-5 sm:px-8">
         {/* Section Heading */}
         <div className="common-heading-div mb-12 sm:mb-16">
-          <h2 className="text-[#3E3226]">
+          <h2 className="text-[#3E3226] font-bold">
             Rooms &amp; Suites
           </h2>
-          <p className="large-paragraph text-[#7A6F64]">
+          <p className="large-paragraph text-[#3E3226]">
             Discover spaces designed for unhurried living.
           </p>
         </div>
@@ -120,17 +120,17 @@ export default function RoomsSlider({ onOpenModal }: RoomsSliderProps) {
 
                   {/* Title & Specs */}
                   <div className="villa-slider-detail-div mb-4">
-                    <div className="h6-heading text-[#3E3226] group-hover:text-[#8C7355] transition-colors mb-2">
+                    <div className="h6-heading text-[#3E3226] font-bold group-hover:text-[#8C7355] transition-colors mb-2">
                       {villa.title}
                     </div>
-                    <p className="small-paragraph villa-paragraph text-[#7A6F64] max-w-[320px] leading-relaxed">
+                    <p className="small-paragraph villa-paragraph text-[#4E3F32] max-w-[320px] leading-relaxed">
                       {villa.specs}
                     </p>
                   </div>
 
                   {/* View Details Link */}
                   <div>
-                    <span className="font-heading text-base font-semibold text-[#3E3226] border-b border-[#3E3226] pb-0.5 group-hover:text-[#8C7355] group-hover:border-[#8C7355] transition-colors inline-block">
+                    <span className="font-heading text-base font-semibold text-[#3E3226] border-b-2 border-[#3E3226] pb-0.5 group-hover:text-[#8C7355] group-hover:border-[#8C7355] transition-colors inline-block">
                       View Details
                     </span>
                   </div>

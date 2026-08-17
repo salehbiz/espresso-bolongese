@@ -54,7 +54,7 @@ export default function DiningSection() {
             </h2>
 
             {/* Subtitle */}
-            <p className="large-paragraph text-[#7A6F64] text-center max-w-[440px]">
+            <p className="large-paragraph text-[#3E3226] text-center max-w-[440px]">
               An intimate journey of flavors, crafted with care and served against a
               backdrop of timeless beauty.
             </p>

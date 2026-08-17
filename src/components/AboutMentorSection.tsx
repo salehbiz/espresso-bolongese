@@ -15,7 +15,7 @@ export default function AboutMentorSection({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Text Column */}
           <div className="space-y-6 max-w-[580px]">
-            <h2 className="text-white">
+            <h2 className="text-white font-bold">
               About our{" "}
               <em className="text-[#FAF7F2] font-normal italic">
                 villas and resort
@@ -23,14 +23,14 @@ export default function AboutMentorSection({
             </h2>
 
             <div className="space-y-4">
-              <p className="large-paragraph text-[#FAF7F2]/90">
+              <p className="large-paragraph text-[#FAF7F2] leading-relaxed">
                 Every villa at Asatha has been thoughtfully crafted, blending
                 modern design with timeless character. No two spaces are
                 alike—each reflects its own unique story, with details that
                 honor the spirit of Asatha and the calm beauty of its
                 surroundings.
               </p>
-              <p className="large-paragraph text-[#FAF7F2]/90">
+              <p className="large-paragraph text-[#FAF7F2] leading-relaxed">
                 Set on dramatic cliffs overlooking the Indian Ocean, Asatha
                 brings together the artistry of boutique living and the
                 serenity of nature. Here, architecture, landscape, and

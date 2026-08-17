@@ -28,7 +28,7 @@ export default function ContactFormSection() {
           <h2 className="text-[#3E3226] mb-4">
             Contact <em className="wood-700-text font-cardo italic">form</em>
           </h2>
-          <p className="large-paragraph text-[#7A6F64] leading-relaxed">
+          <p className="large-paragraph text-[#3E3226] leading-relaxed">
             Fill out the form below and let us help you plan your perfect getaway.
           </p>
         </div>
@@ -151,7 +151,7 @@ export default function ContactFormSection() {
               />
               <label
                 htmlFor="terms"
-                className="text-xs sm:text-sm font-urbanist text-[#7A6F64] cursor-pointer select-none"
+                className="text-xs sm:text-sm font-urbanist text-[#3E3226] cursor-pointer select-none"
               >
                 I agree with the <span className="text-[#3E3226] font-semibold underline">Terms & Conditions</span>
               </label>

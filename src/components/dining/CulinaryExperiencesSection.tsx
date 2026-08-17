@@ -10,7 +10,7 @@ export default function CulinaryExperiencesSection() {
             <h2 className="text-[#3E3226] mb-6">
               Culinary <em className="text-[#8C7355] font-normal italic">Experiences</em>
             </h2>
-            <p className="large-paragraph text-[#7A6F64] leading-relaxed mb-8">
+            <p className="large-paragraph text-[#3E3226] leading-relaxed mb-8">
               From hands-on cooking journeys with our chefs to intimate cliffside dinners beneath the stars. Each moment is designed to connect you with Bali’s culture, nature, and spirit — a celebration of flavor, place, and memory.
             </p>
             <div>

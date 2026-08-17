@@ -49,7 +49,7 @@ export default function WellnessExperiencesSection() {
                     {exp.titleHighlight}
                   </em>
                 </h3>
-                <p className="font-urbanist text-sm sm:text-base text-[#7A6F64] leading-relaxed">
+                <p className="font-urbanist text-sm sm:text-base text-[#3E3226] leading-relaxed">
                   {exp.description}
                 </p>
               </div>

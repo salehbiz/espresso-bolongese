@@ -172,7 +172,7 @@ export default function Header({ onOpenModal, theme = "light" }: HeaderProps) {
               <div className="text-center">
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <div className="h-px bg-[#D4C5B3] flex-1" />
-                  <span className="text-xs text-[#7A6F64] uppercase tracking-wider font-semibold">
+                  <span className="text-xs text-[#3E3226] uppercase tracking-wider font-semibold">
                     Or booking with partners
                   </span>
                   <div className="h-px bg-[#D4C5B3] flex-1" />
